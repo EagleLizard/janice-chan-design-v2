@@ -1,0 +1,58 @@
+@import '../responsive';
+@import 'global';
+
+.jc-nav {
+  padding: 20px;
+
+  .mat-toolbar {
+    height: 92px;
+    .img-container {
+      height: 100%;
+      img {
+        max-height: 100%;
+      }
+    }
+    .nav-items{
+      display: flex;
+      flex: 1 1;
+      justify-content: flex-end;
+    }
+    .nav-links{
+      padding-right: 10px;
+      .nav-link {
+        color: inherit;
+        font-size: $font-md;
+        text-decoration: none;
+        cursor: pointer;
+        padding-left: 20px;
+        transition: color 0.1s;
+        &:hover{
+          color: $link-hover-color;
+        }
+      }
+    }
+    .menu-button-container{
+      max-width: 0;
+      .menu-button {
+        display: none;
+      }
+    }
+  }
+
+  @include phone {
+    padding: 10px;
+    .mat-toolbar {
+      height: 40px;
+      .nav-links {
+        display: none;
+      }
+      .menu-button-container {
+        max-width: initial;
+        .menu-button {
+          display: initial;
+        }
+      }
+    }
+  }
+
+}

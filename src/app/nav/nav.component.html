@@ -1,0 +1,22 @@
+<div class="jc-nav">
+  <mat-toolbar>
+    <div class="img-container">
+      <img src="{{headerImg}}">
+    </div>
+    <div class="nav-links nav-items">
+      <a 
+        class="nav-link"
+        *ngFor="let link of links;"
+        routerLink="{{link.route}}">
+        <div class="link-text">
+          {{link.title}}
+        </div>
+      </a>
+    </div>
+    <div class="nav-items menu-button-container">
+      <div class="menu-button">
+        <fa-icon icon="bars"></fa-icon>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
