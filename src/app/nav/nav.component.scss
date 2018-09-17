@@ -2,10 +2,11 @@
 @import 'global';
 
 .jc-nav {
-  padding: 20px;
-
+  
   .mat-toolbar {
-    height: 92px;
+    height: $nav-height;
+    padding: $page-padding;
+    background: #FFF;
     .img-container {
       height: 100%;
       img {
@@ -40,9 +41,9 @@
   }
 
   @include phone {
-    padding: 10px;
     .mat-toolbar {
-      height: 40px;
+      padding: $page-padding-phone;
+      height: $nav-height-phone;
       .nav-links {
         display: none;
       }

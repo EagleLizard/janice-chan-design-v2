@@ -1,0 +1,19 @@
+@import 'global';
+@import 'responsive';
+
+.app-root {
+  .nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+  }
+  .app-content {
+    margin-top: $nav-height;
+    @include phone {
+      margin-top: $nav-height-phone;
+    }
+  }
+}
