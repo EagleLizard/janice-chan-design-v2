@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: 'art',
-    component: ArtPageComponent
+    component: GalleryPageComponent
   },
   {
     path: 'janice',

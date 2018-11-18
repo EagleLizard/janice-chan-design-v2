@@ -18,6 +18,21 @@ const NEXT_FALL = imageUri('nextfall.jpg');
 const CABARET = imageUri('cabaret.jpg');
 const THE_DRAG = imageUri('thedrag.jpg');
 
+const ART_GALLERY = imageUris([
+  'art/art1.png',
+  'art/art2.png',
+  'art/art3.png',
+  'art/art4.png',
+  'art/art5.jpg',
+  'art/art6.jpg',
+  'art/art7.jpg',
+  'art/art8.jpg',
+  'art/art9.jpg',
+  'art/art10.jpg',
+  'art/art11.jpg',
+  'art/art12.png',
+]);
+
 const THE_DRAG_GALLERY = imageUris([
   'thedrag/thedrag1.jpg',
   'thedrag/thedrag2.jpg',
@@ -190,6 +205,7 @@ export default <any> {
   NEXT_FALL_GALLERY,
   CABARET_GALLERY,
   THE_DRAG_GALLERY,
+  ART_GALLERY,
 };
 
 function imageUri(fileKey: string) {

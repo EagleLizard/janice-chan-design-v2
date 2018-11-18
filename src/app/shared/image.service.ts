@@ -65,7 +65,8 @@ export class ImageService {
       return image.galleryKey === key;
     });
     if(foundImage === undefined){
-      throw new Error(`Image not found for key ${key}`);
+      // throw new Error(`Image not found for key ${key}`); 
+      return undefined;
     }
     if(width !== undefined){
       foundImage = GalleryImage.copy(foundImage);

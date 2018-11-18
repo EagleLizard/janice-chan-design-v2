@@ -53,4 +53,13 @@ export default class Gallery {
     return `${uri.split('?')[0]}?width=${width}`;
   }
 
+  hasDetail(){
+    return this.title.length
+      || this.organization.length
+      || this.credit.length
+      || this.description.length
+      || this.year.length
+      || this.location.length;
+  }
+
 }

@@ -11,6 +11,7 @@ enum GALLERY {
   BYU = 'BYU',
   RENAISSANCE_FAIRE = 'RENAISSANCE_FAIRE',
   CABARET = 'CABARET',
+  ART = 'ART',
 }
 
 export default GALLERY;

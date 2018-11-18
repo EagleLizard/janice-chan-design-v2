@@ -38,10 +38,14 @@ export class GalleryPageComponent implements OnInit {
       columnWidth: THUMB_SIZE
     };
     this.route.params.subscribe(params => {
+      console.log(params);
       if(params.gallery){
         this.gallery = this.galleryService.getGalleryByRoute(params.gallery);
         this.lightboxImages = this.gallery.getLightboxImages(THUMB_SIZE);
         this.headerImage = this.imageService.getScenicImage(this.gallery.galleryKey);
+      }else if(this.route.snapshot.url[0] || this.route.snapshot.url[0].path === 'art'){
+        this.gallery = this.galleryService.getGalleryByRoute('art');
+        this.lightboxImages = this.gallery.getLightboxImages(THUMB_SIZE);
       }
     });
   }

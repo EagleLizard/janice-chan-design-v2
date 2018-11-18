@@ -196,6 +196,17 @@ const GALLERY_PAGES: Gallery[] = [
     '2017, 2018',
     'Lehi, Utah, U.S.A.'
   ),
+  new Gallery(
+    GALLERY.ART,
+    imageUris.ART_GALLERY,
+    '',
+    'art',
+    '',
+    '',
+    [],
+    '',
+    '',
+  )
 ];
 
 @Injectable({

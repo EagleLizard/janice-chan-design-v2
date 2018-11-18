@@ -1,11 +1,15 @@
 <div class="gallery-page page">
   
   <div class="gallery-header">
-    <div class="gallery-image">
+    <div 
+      class="gallery-image"
+      *ngIf="headerImage">
       <img [src]="headerImage.uri">
     </div>
   
-    <div class="gallery-detail">
+    <div 
+      class="gallery-detail"
+      *ngIf="gallery && gallery.hasDetail()">
       <div class="organization">
         {{ gallery.organization }}
         <div class="gallery-title">
@@ -47,5 +51,5 @@
       </ngxMasonryItem>
     </ngx-masonry>
   </div>
-  
+
 </div>
