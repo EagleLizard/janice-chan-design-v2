@@ -14,3 +14,12 @@ $nav-height-phone: 40px;
 
 $page-padding: 20px;
 $page-padding-phone: 5px;
+
+@mixin jc-toolbar {
+  .mat-toolbar {
+    height: $nav-height;
+    padding: $page-padding;
+    background: #FFF;
+    @content;
+  }
+}

@@ -6,7 +6,6 @@
   // BEGIN Media query specific styles
 
   .gallery-image, .gallery-detail{
-    display: inline-block;
     vertical-align: top;
     @include phone {
       display: block;
@@ -14,8 +13,8 @@
   }
 
   .gallery-image {
-    max-width: 40%;
     overflow: hidden;
+    width: 100%;
     height: 50vh;
     @include phone {
       text-align: center;
@@ -82,11 +81,25 @@
 
   // END Media query specific styles
 
+  .gallery-image, .gallery-detail{
+    display: inline-block;
+  }
+
   .gallery-image {
+    // position: relative;
     img {
-      max-height: 100%;
+      // position: absolute;
+      // left: 0;
+      // right: 0;
+      // max-height: 100%;
       max-width: 100%;
+      width:  100%;
+      height: auto;
+      // padding: 0 5vw 0 5vw;
+      box-sizing: border-box;
+      transform: translate(0, -16.2%);
     }
+    overflow: hidden;
   }
 
   .gallery-detail {
@@ -111,5 +124,8 @@
 
   .gallery-images {
     padding-top: 25px;
+    .thumbnail-container{
+      cursor: pointer;
+    }
   }
 }

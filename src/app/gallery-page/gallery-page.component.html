@@ -41,9 +41,11 @@
         *ngFor="let galleryItem of lightboxImages; let idx=index;"
         (click)="openLightbox(idx)"
         >
-        <img [src]="galleryItem.thumb">
+        <div class="thumbnail-container">
+          <img [src]="galleryItem.thumb">
+        </div>
       </ngxMasonryItem>
     </ngx-masonry>
   </div>
-
+  
 </div>

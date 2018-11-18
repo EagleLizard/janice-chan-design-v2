@@ -2,10 +2,8 @@
 @import 'global';
 
 .jc-nav {
+  @include jc-toolbar;
   .mat-toolbar {
-    height: $nav-height;
-    padding: $page-padding;
-    background: #FFF;
     .img-container {
       height: 100%;
       img {

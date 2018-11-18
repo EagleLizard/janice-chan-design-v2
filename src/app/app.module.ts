@@ -17,6 +17,7 @@ import { ArtPageComponent } from './art-page/art-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { PageTileComponent } from './scenic-page/page-tile/page-tile.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import { ContactFooterComponent } from './contact-footer/contact-footer.component';
 
 const icons = [
   faBars
@@ -37,6 +38,7 @@ const MatComponents = [
     AboutPageComponent,
     PageTileComponent,
     GalleryPageComponent,
+    ContactFooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+
+@import 'src/app/global.scss';
+
+.contact-footer {
+  @include jc-toolbar{
+    height: auto;
+    padding: 10px;
+    .mat-toolbar-row{
+      height: auto;
+    }
+    .jc-toolbar-row {
+      font-size: $font-xs;
+      box-sizing: border-box;
+      text-align: center;
+      width: 100%;
+    }
+  };
+  box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.2);
+}
