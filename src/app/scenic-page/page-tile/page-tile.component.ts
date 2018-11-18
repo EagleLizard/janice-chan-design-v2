@@ -3,7 +3,7 @@ import {
   OnInit, 
   Input,
 } from '@angular/core';
-import GalleryPage from 'src/app/shared/gallery-page';
+import Gallery from 'src/app/shared/gallery';
 
 @Component({
   selector: 'jc-page-tile',
@@ -12,12 +12,12 @@ import GalleryPage from 'src/app/shared/gallery-page';
 })
 export class PageTileComponent implements OnInit {
 
-  @Input() galleryPage: GalleryPage;
+  @Input() gallery: Gallery;
 
   constructor() { }
 
   ngOnInit() {
-    console.log(this.galleryPage);
+    console.log(this.gallery);
   }
 
 }

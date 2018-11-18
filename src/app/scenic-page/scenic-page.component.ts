@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import GalleryImage from '../shared/gallery-image';
 import { NgxMasonryOptions } from 'ngx-masonry';
-import GalleryPage from '../shared/gallery-page';
-import { GalleryPageService } from '../shared/gallery-page.service';
+import Gallery from '../shared/gallery';
+import { GalleryService } from '../shared/gallery.service';
 import GALLERY from '../shared/gallery-enum';
 
 const SCENIC_GALLERIES = [
@@ -24,11 +24,11 @@ const SCENIC_GALLERIES = [
   styleUrls: ['./scenic-page.component.scss']
 })
 export class ScenicPageComponent implements OnInit {
-  galleryPages: GalleryPage[];
+  galleries: Gallery[];
   masonryOptions: NgxMasonryOptions;
 
   constructor(
-    private galleryPageService: GalleryPageService
+    private galleryService: GalleryService
   ) { }
 
   ngOnInit() {
@@ -39,8 +39,8 @@ export class ScenicPageComponent implements OnInit {
       fitWidth: true,
       columnWidth: 350
     };
-    this.galleryPages = SCENIC_GALLERIES.map(galleryKey => {
-      return this.galleryPageService.getPage(galleryKey);
+    this.galleries = SCENIC_GALLERIES.map(galleryKey => {
+      return this.galleryService.getGallery(galleryKey);
     });
   }
 

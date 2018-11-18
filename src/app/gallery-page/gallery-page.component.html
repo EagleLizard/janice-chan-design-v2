@@ -1,0 +1,36 @@
+<div class="gallery-page page">
+  
+  <div class="gallery-header">
+    <div class="gallery-image">
+      <img [src]="headerImage.uri">
+    </div>
+  
+    <div class="gallery-detail">
+      <div class="organization">
+        {{ gallery.organization }}
+        <div class="gallery-title">
+          {{ gallery.title }}
+        </div>
+      </div>
+      <div class="self-credit">
+        {{ gallery.credit }}
+      </div>
+      <div class="extra-credit">
+        <div 
+          class="extra-credit-item"
+          *ngFor="let extraCredit of gallery.description;">
+          {{ extraCredit }}
+        </div>
+      </div>
+      <div class="detail-footer">
+        <div class="footer-year">
+          {{ gallery.year }}
+        </div>
+        <div class="footer-location">
+          {{ gallery.location }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,11 +1,10 @@
 <div class="page-tile">
-  <img [src]="galleryPage.image.uri">
+  <img [src]="gallery.image.uri">
   <a 
     class="image-overlay"
-    href="/"
-    >
+    [routerLink]="[gallery.route]">
     <div class="overlay-text-container">
-      {{ galleryPage.title }}
+      {{ gallery.title }}
     </div>
   </a>
 </div>

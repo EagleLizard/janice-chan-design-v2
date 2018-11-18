@@ -7,10 +7,10 @@
       [options]="masonryOptions"
       [useImagesLoaded]="true">
       <ngxMasonryItem 
-        *ngFor="let page of galleryPages;" 
+        *ngFor="let gallery of galleries;" 
         class="masonry-item">
         <div class="gallery-item">
-          <jc-page-tile [galleryPage]="page">
+          <jc-page-tile [gallery]="gallery">
           </jc-page-tile>
         </div>
       </ngxMasonryItem>
