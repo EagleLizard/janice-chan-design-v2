@@ -5,6 +5,7 @@ import GalleryImage from './gallery-image';
 
 export default class Gallery {
   galleryKey: GALLERY;
+  galleryUris: string[];
   title: string;
   image: GalleryImage;
   route: string;
@@ -14,7 +15,8 @@ export default class Gallery {
   year: string;
   location: string;
   constructor(
-    galleryKey: GALLERY, 
+    galleryKey: GALLERY,
+    galleryUris: string[],
     title: string, 
     route: string, 
     organization: string,
@@ -24,6 +26,7 @@ export default class Gallery {
     location: string,
   ){
     this.galleryKey = galleryKey;
+    this.galleryUris = galleryUris;
     this.title = title;
     this.route = route;
     this.organization = organization;

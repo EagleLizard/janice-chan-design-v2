@@ -3,10 +3,12 @@ import { Injectable } from '@angular/core';
 import GALLERY from './gallery-enum';
 import Gallery from './gallery';
 import { ImageService } from './image.service';
+import imageUris from 'src/app/shared/image-uris';
 
 const GALLERY_PAGES: Gallery[] = [
   new Gallery(
     GALLERY.THE_DRAG,
+    imageUris.THE_DRAG_GALLERY,
     'The Drag',
     'the-drag',
     'AN OTHER THEATER COMPANY',
@@ -25,6 +27,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.CABARET,
+    imageUris.CABARET_GALLERY,
     'Cabaret',
     'cabaret',
     'UTAH VALLEY UNIVERSITY',
@@ -44,6 +47,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.NEXT_FALL,
+    imageUris.NEXT_FALL_GALLERY,
     'Next Fall',
     'next-fall',
     'AN OTHER THEATER COMPANY',
@@ -60,6 +64,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.AGAMEMNON,
+    imageUris.AGAMEMNON_GALLERY,
     'Agamemnon',
     'agamemnon',
     'UTAH VALLEY UNIVERSITY',
@@ -77,6 +82,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.TRIBES,
+    imageUris.TRIBES_GALLERY,
     'Tribes',
     'tribes',
     'UTAH VALLEY UNIVERSITY',
@@ -93,6 +99,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.FAT_PIG,
+    imageUris.FAT_PIG_GALLERY,
     'Fat Pig',
     'fat-pig',
     'AN OTHER THEATER COMPANY',
@@ -109,6 +116,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.UVU,
+    imageUris.UVU_GALLERY,
     'A Year with Frog & Toad',
     'a-year-with-frog-and-toad',
     'UTAH VALLEY UNIVERSITY',
@@ -127,6 +135,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.SUNDANCE,
+    imageUris.SUNDANCE_GALLERY,
     'Joseph and the Amazing Technicolor Dreamcoat',
     'joseph-and-the-amazing-technicolor-dreamcoat',
     'SUNDANCE SUMMER THEATRE',
@@ -143,6 +152,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.RENAISSANCE_NOW,
+    imageUris.RENAISSANCE_NOW_GALLERY,
     'The Taming of the Shrew',
     'the-taming-of-the-shrew',
     'RENAISSANCE NOW',
@@ -158,6 +168,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.BYU,
+    imageUris.BYU_GALLERY,
     'Hamlet',
     'hamlet',
     'BRIGHAM YOUNG UNIVERSITY',
@@ -174,6 +185,7 @@ const GALLERY_PAGES: Gallery[] = [
   ),
   new Gallery(
     GALLERY.RENAISSANCE_FAIRE,
+    imageUris.RENAISSANCE_FAIRE_GALLERY,
     'Utah Renaissance Faire',
     'utah-renaissance-faire',
     'UTAH RENAISSANCE FAIRE',

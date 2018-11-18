@@ -33,4 +33,15 @@
     </div>
   </div>
 
+  <div class="gallery-images">
+    <ngx-masonry
+      [options]="masonryOptions"
+      [useImagesLoaded]="true">
+      <ngxMasonryItem
+        *ngFor="let galleryItem of gallery.galleryUris;">
+        <img [src]="galleryItem+'?width=350'">
+      </ngxMasonryItem>
+    </ngx-masonry>
+  </div>
+
 </div>
