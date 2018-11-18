@@ -16,3 +16,11 @@ body {
     padding: $page-padding-phone;
   }
 }
+
+// override for ngx-lightbox styles
+.lightbox .lb-outerContainer {
+  background-color: rgba(0,0,0,0);
+  .lb-container .lb-image{
+    border: 0;
+  }
+}

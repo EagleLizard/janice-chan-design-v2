@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NgxMasonryModule } from 'ngx-masonry'
+import { LightboxModule } from 'ngx-lightbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,6 +45,7 @@ const MatComponents = [
     FontAwesomeModule,
     ...MatComponents,
     NgxMasonryModule,
+    LightboxModule
   ],
   exports: [
     ...MatComponents

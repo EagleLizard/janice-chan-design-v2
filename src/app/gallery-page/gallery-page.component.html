@@ -38,8 +38,10 @@
       [options]="masonryOptions"
       [useImagesLoaded]="true">
       <ngxMasonryItem
-        *ngFor="let galleryItem of gallery.galleryUris;">
-        <img [src]="galleryItem+'?width=350'">
+        *ngFor="let galleryItem of lightboxImages; let idx=index;"
+        (click)="openLightbox(idx)"
+        >
+        <img [src]="galleryItem.thumb">
       </ngxMasonryItem>
     </ngx-masonry>
   </div>

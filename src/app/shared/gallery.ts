@@ -1,5 +1,6 @@
 import GALLERY from './gallery-enum';
 import GalleryImage from './gallery-image';
+import { LightboxImage } from './lightbox-image';
 
 
 
@@ -39,4 +40,17 @@ export default class Gallery {
   setImage(image: GalleryImage){
     this.image = image;
   }
+
+  getLightboxImages(thumbWidth: number){
+    return this.galleryUris.map(uri => 
+      new LightboxImage(uri, Gallery.getWidthUri(uri, thumbWidth))
+    );
+  }
+
+  static getWidthUri(uri:string, width: number){
+    //strip any existing options,
+    // add width query parameter provided
+    return `${uri.split('?')[0]}?width=${width}`;
+  }
+
 }
