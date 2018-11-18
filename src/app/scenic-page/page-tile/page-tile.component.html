@@ -1,5 +1,10 @@
-<div class="page-tile">
-  <img [src]="gallery.image.uri">
+<div 
+  class="page-tile"
+  (mouseover)="hover(true)"
+  (mouseout)="hover(false)">
+  <img 
+    [src]="gallery.image.uri"
+    [ngClass]="hoverClass">
   <a 
     class="image-overlay"
     [routerLink]="[gallery.route]">
