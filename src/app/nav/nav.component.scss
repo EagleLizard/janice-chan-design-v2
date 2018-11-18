@@ -2,7 +2,6 @@
 @import 'global';
 
 .jc-nav {
-  
   .mat-toolbar {
     height: $nav-height;
     padding: $page-padding;
@@ -29,6 +28,9 @@
         transition: color 0.1s;
         &:hover{
           color: $link-hover-color;
+        }
+        .link-text{
+          font-weight: 100;
         }
       }
     }

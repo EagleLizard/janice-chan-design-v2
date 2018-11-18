@@ -1,3 +1,19 @@
 <div class="scenic-page page">
-  scenic page
+  <div>
+      scenic page
+  </div>
+  <div class="page-tile-container" #pageTileContainer>
+    <ngx-masonry 
+      [options]="masonryOptions"
+      [useImagesLoaded]="true">
+      <ngxMasonryItem 
+        *ngFor="let page of galleryPages;" 
+        class="masonry-item">
+        <div class="gallery-item">
+          <jc-page-tile [galleryPage]="page">
+          </jc-page-tile>
+        </div>
+      </ngxMasonryItem>
+    </ngx-masonry>
+  </div>
 </div>

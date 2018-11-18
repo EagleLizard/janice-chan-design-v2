@@ -1,3 +1,16 @@
 .scenic-page {
-  min-height: 200%;
+  // min-height: 200%;
+  .page-tile-container{
+    margin: 0 auto;
+    ngx-masonry{
+      margin: 0 auto;
+      .masonry-item{
+        margin-bottom: 20px;
+        width: 350px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
 }

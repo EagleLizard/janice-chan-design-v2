@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NgxMasonryModule } from 'ngx-masonry'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -12,6 +14,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { ScenicPageComponent } from './scenic-page/scenic-page.component';
 import { ArtPageComponent } from './art-page/art-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { PageTileComponent } from './scenic-page/page-tile/page-tile.component';
 
 const icons = [
   faBars
@@ -30,6 +33,7 @@ const MatComponents = [
     ScenicPageComponent,
     ArtPageComponent,
     AboutPageComponent,
+    PageTileComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,7 @@ const MatComponents = [
     BrowserAnimationsModule,
     FontAwesomeModule,
     ...MatComponents,
+    NgxMasonryModule,
   ],
   exports: [
     ...MatComponents
