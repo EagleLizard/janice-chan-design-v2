@@ -75,7 +75,7 @@ const ABOUT_INFO = {
           {
             title: 'Cabaret', 
             org: '(Utah Valley University) 2018 BroadwayWorld Salt Lake City Awards Nomination',
-          }
+          },
           {
             title: 'A Year with Frog & Toad', 
             org: '(Utah Valley University)',
