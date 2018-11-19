@@ -1,3 +1,33 @@
+
 <div class="about-page page">
-  
+  <div class="name">
+    {{info.name}}
+  </div>
+  <div class="bio">
+    {{info.bio}}
+  </div>
+  <div class="history">
+    <div class="history-title">
+      {{info.history.title}}
+    </div>
+    <div
+      class="history-section"
+      *ngFor="let section of info.history.sections;">
+      <div class="history-title">
+        {{section.title}}
+      </div>
+      <div 
+        class="section-projects"
+        *ngFor="let project of section.projects;">
+        <div class="project-title">
+          {{project.title}}
+        </div>
+        <div class="project-org">
+          {{project.org}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </div>

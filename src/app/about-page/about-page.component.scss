@@ -1,3 +1,36 @@
+@import 'src/app/global';
+
 .about-page{
-  
+  .name {
+    font-size: $font-xlg;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  .bio { 
+    font-size: $font-sm;
+    padding-bottom: 5px;
+  }
+
+  .history {
+    .history-title {
+      font-size: $font-md;
+      padding: 10px 0;
+      font-weight: 500;
+    }
+    .section-projects{
+      display: flex;
+      padding-bottom: 5px;
+      .project-title, .project-org {
+        font-size: $font-sm;
+      }
+      .project-title {
+        font-style: italic;
+      }
+      .project-org{
+        padding-left: 10px;
+      }
+    }
+
+  }
 }
