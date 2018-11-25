@@ -18,10 +18,8 @@
     .nav-links{
       padding-right: 10px;
       .nav-link {
-        color: inherit;
+        @include jc-link;
         font-size: $font-md;
-        text-decoration: none;
-        cursor: pointer;
         padding-left: 20px;
         transition: color 0.1s;
         &:hover{
@@ -55,5 +53,4 @@
       }
     }
   }
-
 }

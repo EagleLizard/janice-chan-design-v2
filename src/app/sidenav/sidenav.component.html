@@ -1,0 +1,23 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #sidenav
+    mode="over"
+    [(opened)]="opened"
+    (openedChange)="onOpenedChange($event)"
+    position="start">
+    <div class="sidenav-menu">
+      <a 
+        *ngFor="let link of links;"
+        routerLink="{{link.route}}"
+        class="sidenav-item"
+        (click)="onItemClick()">
+        <div class="item-content">
+          {{ link.title }}
+        </div>
+      </a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

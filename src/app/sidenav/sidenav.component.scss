@@ -1,0 +1,15 @@
+@import "src/app/global.scss";
+
+.sidenav-container {
+  .sidenav-menu {
+    display: block;
+    padding: 0 30px;
+    .sidenav-item {
+      @include jc-link;
+      .item-content {
+        padding-top: 10px;
+        font-size: $font-lg;
+      }
+    }
+  }
+}

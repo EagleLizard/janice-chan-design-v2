@@ -1,23 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import imageUris from 'src/app/shared/image-uris';
 import { Request, RequestOptions } from '@angular/http';
-
-interface LinkObj { title: string; route: string; }
-
-const LINKS: LinkObj[] = [
-  {
-    title: 'scenic',
-    route: '/scenic'
-  },
-  {
-    title: 'art',
-    route: '/art'
-  },
-  {
-    title: 'janice',
-    route: '/janice'
-  }
-];
+import { NavService, LINKS } from '../shared/nav.service';
 
 @Component({
   selector: 'jc-nav',
@@ -26,10 +10,10 @@ const LINKS: LinkObj[] = [
 })
 export class NavComponent implements OnInit {
   headerImg: string;
-  links: LinkObj[];
+  links = LINKS;
 
   constructor(
-
+    private navService: NavService
   ) { }
 
   ngOnInit() {
@@ -47,7 +31,8 @@ export class NavComponent implements OnInit {
   }
 
   onMenuButtonClick() {
-    console.log('menu button clicked');
+    console.log('side menu button clicked');
+    this.navService.toggle();
   }
 
 }
