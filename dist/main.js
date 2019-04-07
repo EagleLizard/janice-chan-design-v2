@@ -76,17 +76,26 @@ var ABOUT_INFO = {
                 title: 'Current & Upcoming',
                 projects: [
                     {
-                        title: 'The Laramie Project',
-                        org: '(Utah Valley University)'
-                    },
-                    {
                         title: 'The Taming of the Shrew',
                         org: '(Utah Valley University)'
                     },
                     {
                         title: 'Mr Burns, a Post-Electric Play',
                         org: '(An Other Theater Company)'
-                    }
+                    },
+                    {
+                        title: 'Urinetown the Musical',
+                        org: '(Utah Valley University)'
+                    },
+                ]
+            },
+            {
+                title: '2019',
+                projects: [
+                    {
+                        title: 'The Laramie Project',
+                        org: '(Utah Valley University)'
+                    },
                 ]
             },
             {
