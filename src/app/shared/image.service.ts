@@ -48,7 +48,11 @@ const SCENIC_IMAGES = [
   new GalleryImage(
     imageUris.CABARET,
     GALLERY.CABARET,
-  )
+  ),
+  new GalleryImage(
+    imageUris.LARAMIE,
+    GALLERY.LARAMIE,
+  ),
 ];
 
 @Injectable({

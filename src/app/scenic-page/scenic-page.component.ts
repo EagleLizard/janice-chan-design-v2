@@ -6,6 +6,7 @@ import { GalleryService } from '../shared/gallery.service';
 import GALLERY from '../shared/gallery-enum';
 
 const SCENIC_GALLERIES = [
+  GALLERY.LARAMIE,
   GALLERY.THE_DRAG,
   GALLERY.NEXT_FALL,
   GALLERY.AGAMEMNON,
@@ -38,7 +39,7 @@ export class ScenicPageComponent implements OnInit {
       resize: true,
       gutter: 20,
       fitWidth: true,
-      columnWidth: 350
+      columnWidth: 350,
     };
     this.galleries = SCENIC_GALLERIES.map(galleryKey => {
       return this.galleryService.getGallery(galleryKey);

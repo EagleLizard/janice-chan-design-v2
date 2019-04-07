@@ -7,6 +7,25 @@ import imageUris from 'src/app/shared/image-uris';
 
 const GALLERY_PAGES: Gallery[] = [
   new Gallery(
+    GALLERY.LARAMIE,
+    imageUris.LARAMIE_GALLERY,
+    'The Laramie Project',
+    'the-laramie-project',
+    'UTAH VALLEY UNIVERSITY',
+    'scenic & props designer',
+    [
+      'Director: Laurie Harrop-Purser',
+      'Lights: Colin Skip Wilson',
+      'Projections: Emma Belnap',
+      'Sound: Nathan Lowry',
+      'Costumes: Rae Sip & Kate Backman',
+      'Makeup: Alanna Cottam',
+      'Photos: Suzy Oliveira',
+    ],
+    '2019',
+    'Location: Orem, Utah, U.S.A.',
+  ),
+  new Gallery(
     GALLERY.THE_DRAG,
     imageUris.THE_DRAG_GALLERY,
     'The Drag',

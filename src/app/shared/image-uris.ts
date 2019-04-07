@@ -17,6 +17,7 @@ const AGAMEMNON = imageUri('agamemnon.jpg');
 const NEXT_FALL = imageUri('nextfall.jpg');
 const CABARET = imageUri('cabaret.jpg');
 const THE_DRAG = imageUri('thedrag.jpg');
+const LARAMIE = imageUri('laramie.jpg');
 
 const ART_GALLERY = imageUris([
   'art/art1.png',
@@ -31,6 +32,28 @@ const ART_GALLERY = imageUris([
   'art/art10.jpg',
   'art/art11.jpg',
   'art/art12.png',
+]);
+
+const LARAMIE_GALLERY = imageUris([
+  'laramie/laramie1.jpg',
+  'laramie/laramie2.jpg',
+  'laramie/laramie3.jpg',
+  'laramie/laramie4.jpg',
+  'laramie/laramie5.jpg',
+  'laramie/laramie6.jpg',
+  'laramie/laramie7.jpg',
+  'laramie/laramie8.jpg',
+  'laramie/laramie9.jpg',
+  'laramie/laramie10.jpg',
+  'laramie/laramie11.jpg',
+  'laramie/laramie12.jpg',
+  'laramie/laramie13.jpg',
+  'laramie/laramie14.jpg',
+  'laramie/laramie15.jpg',
+  'laramie/laramie16.jpg',
+  'laramie/laramie17.jpg',
+  'laramie/laramie18.jpg',
+  'laramie/laramie19.jpg',
 ]);
 
 const THE_DRAG_GALLERY = imageUris([
@@ -193,6 +216,7 @@ export default <any> {
   NEXT_FALL,
   CABARET,
   THE_DRAG,
+  LARAMIE,
 
   TRIBES_GALLERY,
   FAT_PIG_GALLERY,
@@ -206,6 +230,7 @@ export default <any> {
   CABARET_GALLERY,
   THE_DRAG_GALLERY,
   ART_GALLERY,
+  LARAMIE_GALLERY,
 };
 
 function imageUri(fileKey: string) {
