@@ -193,6 +193,8 @@ const BYU_GALLERY = imageUris([
 ]);
 
 const RENAISSANCE_FAIRE_GALLERY = imageUris([
+  'renaissancefaire/renaissancefaire1.jpg',
+  'renaissancefaire/renaissancefaire2.jpg',
   'renaissancefaire/Shield1.png',
   'renaissancefaire/Shield2.png',
   'renaissancefaire/Shield3.png',
