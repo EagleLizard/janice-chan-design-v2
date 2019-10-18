@@ -11,7 +11,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.LARAMIE_GALLERY,
     'The Laramie Project',
     'the-laramie-project',
-    'UTAH VALLEY UNIVERSITY',
+    'Utah Valley University',
     'scenic & props designer',
     [
       'Director: Laurie Harrop-Purser',
@@ -30,7 +30,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.THE_DRAG_GALLERY,
     'The Drag',
     'the-drag',
-    'AN OTHER THEATER COMPANY',
+    'An Other Theater Company',
     'scenic & props designer, muralist',
     [
       'Director: Taylor Jack Nelson',
@@ -49,7 +49,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.CABARET_GALLERY,
     'Cabaret',
     'cabaret',
-    'UTAH VALLEY UNIVERSITY',
+    'Utah Valley University',
     'assistant scenic & props designer',
     [
       'Director: Robert Moffat',
@@ -69,7 +69,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.NEXT_FALL_GALLERY,
     'Next Fall',
     'next-fall',
-    'AN OTHER THEATER COMPANY',
+    'An Other Theater Company',
     'scenic designer, props designer',
     [
       'Director: Kacey Spadafora',
@@ -86,7 +86,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.AGAMEMNON_GALLERY,
     'Agamemnon',
     'agamemnon',
-    'UTAH VALLEY UNIVERSITY',
+    'Utah Valley University',
     'scenic designer',
     [
       'Director: Christopher Clark',
@@ -104,7 +104,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.TRIBES_GALLERY,
     'Tribes',
     'tribes',
-    'UTAH VALLEY UNIVERSITY',
+    'Utah Valley University',
     'scenic designer',
     [
       'Director: Hayley Lambdin',
@@ -121,7 +121,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.FAT_PIG_GALLERY,
     'Fat Pig',
     'fat-pig',
-    'AN OTHER THEATER COMPANY',
+    'An Other Theater Company',
     'scenic designer',
     [
       'Director: Morag Shepherd',
@@ -138,7 +138,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.UVU_GALLERY,
     'A Year with Frog & Toad',
     'a-year-with-frog-and-toad',
-    'UTAH VALLEY UNIVERSITY',
+    'Utah Valley University',
     'assistant scenic designer',
     [
       'Director: Lisa Hall Hagen',
@@ -157,7 +157,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.SUNDANCE_GALLERY,
     'Joseph and the Amazing Technicolor Dreamcoat',
     'joseph-and-the-amazing-technicolor-dreamcoat',
-    'SUNDANCE SUMMER THEATRE',
+    'Sundance Summer Theatre',
     'scenic painter',
     [
       'Director: D. Terry Petrie',
@@ -174,7 +174,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.RENAISSANCE_NOW_GALLERY,
     'The Taming of the Shrew',
     'the-taming-of-the-shrew',
-    'RENAISSANCE NOW',
+    'Renaissance Now',
     'scenic designer, properties master',
     [
       'Director: Archelaus D. Crisanto',
@@ -190,7 +190,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.BYU_GALLERY,
     'Hamlet',
     'hamlet',
-    'BRIGHAM YOUNG UNIVERSITY',
+    'Brigham Young University',
     'scenic designer',
     [
       'Director: Chris Hults',
@@ -207,7 +207,7 @@ const GALLERY_PAGES: Gallery[] = [
     imageUris.RENAISSANCE_FAIRE_GALLERY,
     'Utah Renaissance Faire',
     'utah-renaissance-faire',
-    'UTAH RENAISSANCE FAIRE',
+    'Utah Renaissance Faire',
     'prop painter',
     [
       

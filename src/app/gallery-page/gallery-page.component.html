@@ -6,9 +6,9 @@
       class="gallery-detail"
       *ngIf="gallery && gallery.hasDetail()">
       <div class="organization">
-        {{ gallery.organization }}
+        {{ gallery.title.toUpperCase() }}
         <div class="gallery-title">
-          {{ gallery.title }}
+            {{ gallery.organization }}
         </div>
       </div>
       <div class="self-credit">
