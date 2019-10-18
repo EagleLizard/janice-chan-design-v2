@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Gallery from '../shared/gallery';
 import { GalleryService } from '../shared/gallery.service';
-import { ImageService } from '../shared/image.service';
 import GalleryImage from '../shared/gallery-image';
 import { NgxMasonryOptions } from 'ngx-masonry';
 import { Lightbox } from 'ngx-lightbox';
@@ -25,7 +24,6 @@ export class GalleryPageComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private galleryService: GalleryService,
-    private imageService: ImageService,
     private lightbox: Lightbox,
   ) { }
 
@@ -42,7 +40,6 @@ export class GalleryPageComponent implements OnInit {
       if(params.gallery){
         this.gallery = this.galleryService.getGalleryByRoute(params.gallery);
         this.lightboxImages = this.gallery.getLightboxImages(THUMB_SIZE);
-        this.headerImage = this.imageService.getScenicImage(this.gallery.galleryKey);
       }else if(this.route.snapshot.url[0] || this.route.snapshot.url[0].path === 'art'){
         this.gallery = this.galleryService.getGalleryByRoute('art');
         this.lightboxImages = this.gallery.getLightboxImages(THUMB_SIZE);
