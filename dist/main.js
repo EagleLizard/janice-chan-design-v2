@@ -496,7 +496,7 @@ var ArtPageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"contact-footer\">\n  <mat-toolbar>\n    <mat-toolbar-row>\n      <div class=\"jc-toolbar-row\">\n        JANICECHAN.DESIGN\n      </div>\n    </mat-toolbar-row>\n    <mat-toolbar-row>\n      <div class=\"jc-toolbar-row\">\n        <a href=\"mailto:contact@janicechan.design\">\n            CONTACT@JANICECHAN.DESIGN\n        </a>\n      </div>\n    </mat-toolbar-row>\n    <mat-toolbar-row>\n      <div class=\"jc-toolbar-row\">\n        &copy; Copyright 2018 JANICE CHAN DESIGNS\n      </div>\n    </mat-toolbar-row>\n  </mat-toolbar>\n</div>\n"
+module.exports = "<div class=\"contact-footer\">\n  <mat-toolbar>\n    <mat-toolbar-row>\n      <div class=\"jc-toolbar-row\">\n        JANICECHAN.DESIGN\n      </div>\n    </mat-toolbar-row>\n    <mat-toolbar-row>\n      <div class=\"jc-toolbar-row\">\n        <a href=\"mailto:contact@janicechan.design\">\n            CONTACT@JANICECHAN.DESIGN\n        </a>\n      </div>\n    </mat-toolbar-row>\n    <mat-toolbar-row>\n      <div class=\"jc-toolbar-row\">\n        &copy; 2019 JANICE CHAN\n      </div>\n    </mat-toolbar-row>\n  </mat-toolbar>\n</div>\n"
 
 /***/ }),
 
@@ -559,7 +559,7 @@ var ContactFooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"gallery-page page\">\n  \n  <div class=\"gallery-header\">\n    <div \n      class=\"gallery-image\"\n      *ngIf=\"headerImage\">\n      <img [src]=\"headerImage.uri\">\n    </div>\n  \n    <div \n      class=\"gallery-detail\"\n      *ngIf=\"gallery && gallery.hasDetail()\">\n      <div class=\"organization\">\n        {{ gallery.organization }}\n        <div class=\"gallery-title\">\n          {{ gallery.title }}\n        </div>\n      </div>\n      <div class=\"self-credit\">\n        {{ gallery.credit }}\n      </div>\n      <div class=\"extra-credit\">\n        <div \n          class=\"extra-credit-item\"\n          *ngFor=\"let extraCredit of gallery.description;\">\n          {{ extraCredit }}\n        </div>\n      </div>\n      <div class=\"detail-footer\">\n        <div class=\"footer-year\">\n          {{ gallery.year }}\n        </div>\n        <div class=\"footer-location\">\n          {{ gallery.location }}\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"gallery-images\">\n    <ngx-masonry\n      [options]=\"masonryOptions\"\n      [useImagesLoaded]=\"true\">\n      <ngxMasonryItem\n        *ngFor=\"let galleryItem of lightboxImages; let idx=index;\"\n        (click)=\"openLightbox(idx)\"\n        >\n        <div class=\"thumbnail-container\">\n          <img [src]=\"galleryItem.thumb\">\n        </div>\n      </ngxMasonryItem>\n    </ngx-masonry>\n  </div>\n\n</div>\n"
+module.exports = "<div class=\"gallery-page page\">\n  \n  <div class=\"gallery-header\">\n  \n    <div \n      class=\"gallery-detail\"\n      *ngIf=\"gallery && gallery.hasDetail()\">\n      <div class=\"organization\">\n        {{ gallery.title.toUpperCase() }}\n        <div class=\"gallery-title\">\n            {{ gallery.organization }}\n        </div>\n      </div>\n      <div class=\"self-credit\">\n        {{ gallery.credit }}\n      </div>\n      <div class=\"extra-credit\">\n        <div \n          class=\"extra-credit-item\"\n          *ngFor=\"let extraCredit of gallery.description;\">\n          {{ extraCredit }}\n        </div>\n      </div>\n      <div class=\"detail-footer\">\n        <div class=\"footer-year\">\n          {{ gallery.year }}\n        </div>\n        <div class=\"footer-location\">\n          {{ gallery.location }}\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"gallery-images\">\n    <ngx-masonry\n      [options]=\"masonryOptions\"\n      [useImagesLoaded]=\"true\">\n      <ngxMasonryItem\n        *ngFor=\"let galleryItem of lightboxImages; let idx=index;\"\n        (click)=\"openLightbox(idx)\"\n        >\n        <div class=\"thumbnail-container\">\n          <img [src]=\"galleryItem.thumb\">\n        </div>\n      </ngxMasonryItem>\n    </ngx-masonry>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -570,7 +570,7 @@ module.exports = "<div class=\"gallery-page page\">\n  \n  <div class=\"gallery-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".gallery-page .gallery-image, .gallery-page .gallery-detail {\n  vertical-align: top; }\n  @media only screen and (max-device-width: 480px) {\n    .gallery-page .gallery-image, .gallery-page .gallery-detail {\n      display: block; } }\n  .gallery-page .gallery-image {\n  overflow: hidden;\n  width: 100%;\n  height: 50vh; }\n  @media only screen and (max-device-width: 480px) {\n    .gallery-page .gallery-image {\n      text-align: center;\n      max-width: 100%;\n      height: auto;\n      max-height: 60vh; } }\n  .gallery-page .gallery-detail {\n  max-width: 60%;\n  padding-left: 5vw; }\n  @media only screen and (max-device-width: 480px) {\n    .gallery-page .gallery-detail {\n      padding-left: 0;\n      max-width: 100%; } }\n  .gallery-page .gallery-detail .organization {\n    font-size: 32px; }\n  @media only screen and (max-device-width: 480px) {\n      .gallery-page .gallery-detail .organization {\n        font-size: 28px; } }\n  .gallery-page .gallery-detail .organization .gallery-title {\n      font-size: 20px; }\n  @media only screen and (max-device-width: 480px) {\n        .gallery-page .gallery-detail .organization .gallery-title {\n          font-size: 18px; } }\n  .gallery-page .gallery-detail .self-credit {\n    font-size: 26px; }\n  @media only screen and (max-device-width: 480px) {\n      .gallery-page .gallery-detail .self-credit {\n        font-size: 20px; } }\n  .gallery-page .gallery-detail .extra-credit {\n    padding-top: 10px; }\n  @media only screen and (max-device-width: 480px) {\n      .gallery-page .gallery-detail .extra-credit {\n        padding-top: 2px; } }\n  .gallery-page .gallery-detail .extra-credit .extra-credit-item {\n      font-size: 20px;\n      padding-top: 5px; }\n  @media only screen and (max-device-width: 480px) {\n        .gallery-page .gallery-detail .extra-credit .extra-credit-item {\n          font-size: 14px;\n          padding-top: 2px; } }\n  .gallery-page .gallery-detail .detail-footer {\n    font-size: 26px;\n    padding-top: 40px; }\n  @media only screen and (max-device-width: 480px) {\n      .gallery-page .gallery-detail .detail-footer {\n        font-size: 20px;\n        padding-top: 15px; } }\n  .gallery-page .gallery-image, .gallery-page .gallery-detail {\n  display: inline-block; }\n  .gallery-page .gallery-image {\n  overflow: hidden; }\n  .gallery-page .gallery-image img {\n    max-width: 100%;\n    width: 100%;\n    height: auto;\n    box-sizing: border-box;\n    -webkit-transform: translate(0, -16.2%);\n            transform: translate(0, -16.2%); }\n  .gallery-page .gallery-detail {\n  box-sizing: border-box; }\n  .gallery-page .gallery-detail .organization {\n    display: inline-block; }\n  .gallery-page .gallery-detail .organization .gallery-title {\n      font-style: italic;\n      text-align: right; }\n  .gallery-page .gallery-detail .detail-footer {\n    display: flex;\n    justify-content: space-between; }\n  .gallery-page .gallery-detail .detail-footer .footer-location {\n      padding-left: 15px; }\n  .gallery-page .gallery-images {\n  padding-top: 25px;\n  margin: 0 auto; }\n  .gallery-page .gallery-images ngx-masonry {\n    margin: 0 auto; }\n  .gallery-page .gallery-images ngx-masonry .thumbnail-container {\n      cursor: pointer;\n      margin-bottom: 20px;\n      width: 350px; }\n  .gallery-page .gallery-images ngx-masonry .thumbnail-container img {\n        width: 100%; }\n"
+module.exports = ".gallery-page {\n  display: flex; }\n  .gallery-page .gallery-detail {\n    flex: 2 1; }\n  .gallery-page .gallery-images {\n    flex: 3 0; }\n  @media only screen and (max-device-width: 480px) {\n    .gallery-page {\n      flex-direction: column; } }\n  .gallery-page .gallery-images {\n    padding-top: 25px;\n    margin: 0 auto; }\n  .gallery-page .gallery-images ngx-masonry {\n      margin: 0 auto; }\n  .gallery-page .gallery-images ngx-masonry .thumbnail-container {\n        cursor: pointer;\n        margin-bottom: 20px;\n        width: 350px; }\n  .gallery-page .gallery-images ngx-masonry .thumbnail-container img {\n          width: 100%; }\n  .gallery-page .gallery-detail {\n    padding: 1.5vh 1vw; }\n  @media only screen and (max-device-width: 480px) {\n      .gallery-page .gallery-detail {\n        padding-left: 0;\n        max-width: 100%; } }\n  .gallery-page .gallery-detail .organization {\n      font-size: 32px; }\n  @media only screen and (max-device-width: 480px) {\n        .gallery-page .gallery-detail .organization {\n          font-size: 28px; } }\n  .gallery-page .gallery-detail .organization .gallery-title {\n        font-size: 20px; }\n  @media only screen and (max-device-width: 480px) {\n          .gallery-page .gallery-detail .organization .gallery-title {\n            font-size: 18px; } }\n  .gallery-page .gallery-detail .self-credit {\n      font-size: 26px; }\n  @media only screen and (max-device-width: 480px) {\n        .gallery-page .gallery-detail .self-credit {\n          font-size: 20px; } }\n  .gallery-page .gallery-detail .extra-credit {\n      padding-top: 10px; }\n  @media only screen and (max-device-width: 480px) {\n        .gallery-page .gallery-detail .extra-credit {\n          padding-top: 2px; } }\n  .gallery-page .gallery-detail .extra-credit .extra-credit-item {\n        font-size: 20px;\n        padding-top: 5px; }\n  @media only screen and (max-device-width: 480px) {\n          .gallery-page .gallery-detail .extra-credit .extra-credit-item {\n            font-size: 14px;\n            padding-top: 2px; } }\n  .gallery-page .gallery-detail .detail-footer {\n      font-size: 26px;\n      padding-top: 40px; }\n  @media only screen and (max-device-width: 480px) {\n        .gallery-page .gallery-detail .detail-footer {\n          font-size: 20px;\n          padding-top: 15px; } }\n  .gallery-page .gallery-image, .gallery-page .gallery-detail {\n    vertical-align: top; }\n  @media only screen and (max-device-width: 480px) {\n      .gallery-page .gallery-image, .gallery-page .gallery-detail {\n        display: block; } }\n  .gallery-page .gallery-image {\n    overflow: hidden;\n    width: 100%;\n    height: 50vh; }\n  @media only screen and (max-device-width: 480px) {\n      .gallery-page .gallery-image {\n        text-align: center;\n        max-width: 100%;\n        height: auto;\n        max-height: 60vh; } }\n  .gallery-page .gallery-detail {\n    display: inline-block; }\n  .gallery-page .gallery-detail {\n    box-sizing: border-box; }\n  .gallery-page .gallery-detail .organization {\n      display: inline-block; }\n  .gallery-page .gallery-detail .organization .gallery-title {\n        font-style: italic;\n        text-align: left; }\n  .gallery-page .gallery-detail .detail-footer {\n      display: flex;\n      justify-content: space-between; }\n  .gallery-page .gallery-detail .detail-footer .footer-location {\n        padding-left: 15px; }\n"
 
 /***/ }),
 
@@ -587,9 +587,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _shared_gallery_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/gallery.service */ "./src/app/shared/gallery.service.ts");
-/* harmony import */ var _shared_image_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/image.service */ "./src/app/shared/image.service.ts");
-/* harmony import */ var ngx_lightbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-lightbox */ "./node_modules/ngx-lightbox/index.js");
-/* harmony import */ var ngx_lightbox__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(ngx_lightbox__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var ngx_lightbox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-lightbox */ "./node_modules/ngx-lightbox/index.js");
+/* harmony import */ var ngx_lightbox__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(ngx_lightbox__WEBPACK_IMPORTED_MODULE_3__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -603,13 +602,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-
 var THUMB_SIZE = 350;
 var GalleryPageComponent = /** @class */ (function () {
-    function GalleryPageComponent(route, galleryService, imageService, lightbox) {
+    function GalleryPageComponent(route, galleryService, lightbox) {
         this.route = route;
         this.galleryService = galleryService;
-        this.imageService = imageService;
         this.lightbox = lightbox;
     }
     GalleryPageComponent.prototype.ngOnInit = function () {
@@ -626,7 +623,6 @@ var GalleryPageComponent = /** @class */ (function () {
             if (params.gallery) {
                 _this.gallery = _this.galleryService.getGalleryByRoute(params.gallery);
                 _this.lightboxImages = _this.gallery.getLightboxImages(THUMB_SIZE);
-                _this.headerImage = _this.imageService.getScenicImage(_this.gallery.galleryKey);
             }
             else if (_this.route.snapshot.url[0] || _this.route.snapshot.url[0].path === 'art') {
                 _this.gallery = _this.galleryService.getGalleryByRoute('art');
@@ -645,8 +641,7 @@ var GalleryPageComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
             _shared_gallery_service__WEBPACK_IMPORTED_MODULE_2__["GalleryService"],
-            _shared_image_service__WEBPACK_IMPORTED_MODULE_3__["ImageService"],
-            ngx_lightbox__WEBPACK_IMPORTED_MODULE_4__["Lightbox"]])
+            ngx_lightbox__WEBPACK_IMPORTED_MODULE_3__["Lightbox"]])
     ], GalleryPageComponent);
     return GalleryPageComponent;
 }());
@@ -759,7 +754,7 @@ module.exports = "<div \n  class=\"page-tile\"\n  (mouseover)=\"hover(true)\"\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".page-tile {\n  position: relative;\n  text-align: center;\n  overflow: hidden; }\n  .page-tile img {\n    transition: opacity 0.4s ease, -webkit-transform 0.4s ease;\n    transition: transform 0.4s ease, opacity 0.4s ease;\n    transition: transform 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease; }\n  .page-tile img.hovered {\n      -webkit-transform: scale(1.3, 1.3);\n              transform: scale(1.3, 1.3); }\n  .page-tile .image-overlay {\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    width: 100%;\n    height: 100%;\n    opacity: 0; }\n  .page-tile .image-overlay:hover {\n      background-color: rgba(255, 255, 255, 0.7);\n      opacity: 1;\n      cursor: pointer; }\n  .page-tile .image-overlay .overlay-text-container {\n      font-size: 32px;\n      position: absolute;\n      color: #000;\n      top: 50%;\n      left: 50%;\n      -webkit-transform: translate(-50%, -50%);\n              transform: translate(-50%, -50%);\n      font-weight: 700; }\n"
+module.exports = ".page-tile {\n  position: relative;\n  text-align: center;\n  overflow: hidden; }\n  .page-tile img {\n    transition: opacity 0.4s ease, -webkit-transform 0.4s ease;\n    transition: transform 0.4s ease, opacity 0.4s ease;\n    transition: transform 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease; }\n  .page-tile img.hovered {\n      -webkit-transform: scale(1.3, 1.3);\n              transform: scale(1.3, 1.3); }\n  .page-tile .image-overlay {\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    width: 100%;\n    height: 100%;\n    opacity: 0; }\n  .page-tile .image-overlay:hover {\n      background-color: rgba(255, 255, 255, 0.7);\n      opacity: 1;\n      cursor: pointer; }\n  .page-tile .image-overlay .overlay-text-container {\n      font-size: 32px;\n      position: absolute;\n      color: #000;\n      top: 10px;\n      left: 10px;\n      text-align: left; }\n"
 
 /***/ }),
 
@@ -1019,7 +1014,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var GALLERY_PAGES = [
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].LARAMIE, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].LARAMIE_GALLERY, 'The Laramie Project', 'the-laramie-project', 'UTAH VALLEY UNIVERSITY', 'scenic & props designer', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].LARAMIE, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].LARAMIE_GALLERY, 'The Laramie Project', 'the-laramie-project', 'Utah Valley University', 'scenic & props designer', [
         'Director: Laurie Harrop-Purser',
         'Lights: Colin Skip Wilson',
         'Projections: Emma Belnap',
@@ -1028,7 +1023,7 @@ var GALLERY_PAGES = [
         'Makeup: Alanna Cottam',
         'Photos: Suzy Oliveira',
     ], '2019', 'Location: Orem, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].THE_DRAG, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].THE_DRAG_GALLERY, 'The Drag', 'the-drag', 'AN OTHER THEATER COMPANY', 'scenic & props designer, muralist', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].THE_DRAG, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].THE_DRAG_GALLERY, 'The Drag', 'the-drag', 'An Other Theater Company', 'scenic & props designer, muralist', [
         'Director: Taylor Jack Nelson',
         'Assistant Muralist: Tyler Whited',
         'Lights: Aimee Findley Moore',
@@ -1037,7 +1032,7 @@ var GALLERY_PAGES = [
         'Makeup: Christopher-Alan Pederson',
         'Photos: Laura Chapman',
     ], '2018', 'Location: Provo, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].CABARET, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].CABARET_GALLERY, 'Cabaret', 'cabaret', 'UTAH VALLEY UNIVERSITY', 'assistant scenic & props designer', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].CABARET, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].CABARET_GALLERY, 'Cabaret', 'cabaret', 'Utah Valley University', 'assistant scenic & props designer', [
         'Director: Robert Moffat',
         'Scenic: Madeline Ashton',
         'Props: Madeline Ashton',
@@ -1047,14 +1042,14 @@ var GALLERY_PAGES = [
         'Makeup: Shelby Gist',
         'Photos: Jeremy Hall',
     ], '2018', 'Location: Orem, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].NEXT_FALL, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].NEXT_FALL_GALLERY, 'Next Fall', 'next-fall', 'AN OTHER THEATER COMPANY', 'scenic designer, props designer', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].NEXT_FALL, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].NEXT_FALL_GALLERY, 'Next Fall', 'next-fall', 'An Other Theater Company', 'scenic designer, props designer', [
         'Director: Kacey Spadafora',
         'Lights: Paige Porter',
         'Sound: Kaecy Spadafora',
         'Costumes: Ash Knowles',
         'Photos: Laura Chapman',
     ], '2018', 'Location: Provo, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].AGAMEMNON, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].AGAMEMNON_GALLERY, 'Agamemnon', 'agamemnon', 'UTAH VALLEY UNIVERSITY', 'scenic designer', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].AGAMEMNON, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].AGAMEMNON_GALLERY, 'Agamemnon', 'agamemnon', 'Utah Valley University', 'scenic designer', [
         'Director: Christopher Clark',
         'Props: Aimee Moore',
         'Lights: Aaron Gubler',
@@ -1062,21 +1057,21 @@ var GALLERY_PAGES = [
         'Costumes: Mallory Goodman',
         'Photos: Deric Lambdin',
     ], '2018', 'Orem, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].TRIBES, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].TRIBES_GALLERY, 'Tribes', 'tribes', 'UTAH VALLEY UNIVERSITY', 'scenic designer', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].TRIBES, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].TRIBES_GALLERY, 'Tribes', 'tribes', 'Utah Valley University', 'scenic designer', [
         'Director: Hayley Lambdin',
         'Lights: Aaron Gubler',
         'Sound: Gavin Henry',
         'Costumes: Molly Pack',
         'Photos: Deric Lambdin',
     ], '2018', 'Orem, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].FAT_PIG, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].FAT_PIG_GALLERY, 'Fat Pig', 'fat-pig', 'AN OTHER THEATER COMPANY', 'scenic designer', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].FAT_PIG, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].FAT_PIG_GALLERY, 'Fat Pig', 'fat-pig', 'An Other Theater Company', 'scenic designer', [
         'Director: Morag Shepherd',
         'Lights: Paige Porter',
         'Sound: Paige Porter',
         'Costumes: Chris Lancaster',
         'Photos: Laura Chapman',
     ], '2018', 'Provo, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].UVU, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].UVU_GALLERY, 'A Year with Frog & Toad', 'a-year-with-frog-and-toad', 'UTAH VALLEY UNIVERSITY', 'assistant scenic designer', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].UVU, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].UVU_GALLERY, 'A Year with Frog & Toad', 'a-year-with-frog-and-toad', 'Utah Valley University', 'assistant scenic designer', [
         'Director: Lisa Hall Hagen',
         'Scenic: Emma Belnap',
         'Props: Alicia Freeman',
@@ -1085,27 +1080,27 @@ var GALLERY_PAGES = [
         'Costumes: Chris Lancaster',
         'Photos: Great Projects Photography',
     ], '2017', 'Orem, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].SUNDANCE, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].SUNDANCE_GALLERY, 'Joseph and the Amazing Technicolor Dreamcoat', 'joseph-and-the-amazing-technicolor-dreamcoat', 'SUNDANCE SUMMER THEATRE', 'scenic painter', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].SUNDANCE, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].SUNDANCE_GALLERY, 'Joseph and the Amazing Technicolor Dreamcoat', 'joseph-and-the-amazing-technicolor-dreamcoat', 'Sundance Summer Theatre', 'scenic painter', [
         'Director: D. Terry Petrie',
         'Scenic: Stephen Purdy',
         'Lights: Matthew Taylor',
         'Sound: Matthew Kupferer',
         'Costumes: Nancy Cannon, Carla Summers'
     ], '2017', 'Sundance, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].RENAISSANCE_NOW, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].RENAISSANCE_NOW_GALLERY, 'The Taming of the Shrew', 'the-taming-of-the-shrew', 'RENAISSANCE NOW', 'scenic designer, properties master', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].RENAISSANCE_NOW, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].RENAISSANCE_NOW_GALLERY, 'The Taming of the Shrew', 'the-taming-of-the-shrew', 'Renaissance Now', 'scenic designer, properties master', [
         'Director: Archelaus D. Crisanto',
         'Assistant Director: Sarah Butler',
         'Costumes: Amanda Louise Hellewell',
         'Photos: Bruce Miller, Janice Chan',
     ], '2017', 'Provo, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].BYU, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].BYU_GALLERY, 'Hamlet', 'hamlet', 'BRIGHAM YOUNG UNIVERSITY', 'scenic designer', [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].BYU, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].BYU_GALLERY, 'Hamlet', 'hamlet', 'Brigham Young University', 'scenic designer', [
         'Director: Chris Hults',
         'Lights: Kalea Crapo',
         'Sound: Matthew Kupferer',
         'Costumes: Sarah Ziegler',
         'Photos: Matthew Kupferer',
     ], '2017', 'Provo, Utah, U.S.A.'),
-    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].RENAISSANCE_FAIRE, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].RENAISSANCE_FAIRE_GALLERY, 'Utah Renaissance Faire', 'utah-renaissance-faire', 'UTAH RENAISSANCE FAIRE', 'prop painter', [], '2017, 2018', 'Lehi, Utah, U.S.A.'),
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].RENAISSANCE_FAIRE, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].RENAISSANCE_FAIRE_GALLERY, 'Utah Renaissance Faire', 'utah-renaissance-faire', 'Utah Renaissance Faire', 'prop painter', [], '2017, 2018', 'Lehi, Utah, U.S.A.'),
     new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].ART, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].ART_GALLERY, '', 'art', '', '', [], '', '')
 ];
 var GalleryService = /** @class */ (function () {
