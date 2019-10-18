@@ -3,6 +3,7 @@
 
 .contact-footer {
   @include jc-toolbar{
+    font-weight: 100;
     height: auto;
     padding: 10px;
     .mat-toolbar-row{
@@ -13,6 +14,15 @@
       box-sizing: border-box;
       text-align: center;
       width: 100%;
+      &.jc-copyright {
+        text-align: left;
+      }
+      &.jc-contact {
+        & > a {
+          color: inherit;
+        }
+        text-align: right;
+      }
     }
   };
   box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.2);
