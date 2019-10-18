@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"about-page page\">\n  <div class=\"name\">\n    {{info.name}}\n  </div>\n  <div class=\"bio\">\n    {{info.bio}}\n  </div>\n  <div class=\"history\">\n    <div class=\"history-title\">\n      {{info.history.title}}\n    </div>\n    <div\n      class=\"history-section\"\n      *ngFor=\"let section of info.history.sections;\">\n      <div class=\"history-title\">\n        {{section.title}}\n      </div>\n      <div \n        class=\"section-projects\"\n        *ngFor=\"let project of section.projects;\">\n        <div class=\"project-title\">\n          {{project.title}}\n        </div>\n        <div class=\"project-org\">\n          {{project.org}}\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n</div>\n"
+module.exports = "\n<div class=\"about-page page\">\n  <div class=\"bio-container\">\n    <div class=\"name\">\n      {{info.name}}\n    </div>\n    <div class=\"bio\">\n      {{info.bio}}\n    </div>\n    <div class=\"instagram\">\n      <span>\n        IG\n      </span>\n      <span>\n        <a href=\"{{info.instagram.url}}\">\n          {{info.instagram.userName}}\n        </a>\n      </span>\n    </div>\n  </div>\n  <div class=\"history\">\n    <div class=\"history-title\">\n      {{info.history.title}}\n    </div>\n    <div\n      class=\"history-section\"\n      *ngFor=\"let section of info.history.sections;\">\n      <div class=\"history-title\">\n        {{section.title}}\n      </div>\n      <div \n        class=\"section-projects\"\n        *ngFor=\"let project of section.projects;\">\n        <div class=\"project-title\">\n          {{project.title}}\n        </div>\n        <div class=\"project-org\">\n          {{project.org}}\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n</div>\n"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "\n<div class=\"about-page page\">\n  <div class=\"name\">\n   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".about-page .name {\n  font-size: 46px;\n  font-weight: 700;\n  padding-bottom: 10px; }\n\n.about-page .bio {\n  font-size: 20px;\n  padding-bottom: 5px; }\n\n.about-page .history .history-title {\n  font-size: 26px;\n  padding: 10px 0;\n  font-weight: 500; }\n\n.about-page .history .section-projects {\n  display: flex;\n  padding-bottom: 5px; }\n\n.about-page .history .section-projects .project-title, .about-page .history .section-projects .project-org {\n    font-size: 20px; }\n\n.about-page .history .section-projects .project-title {\n    font-style: italic; }\n\n.about-page .history .section-projects .project-org {\n    padding-left: 10px; }\n"
+module.exports = ".about-page {\n  display: flex; }\n  .about-page .bio-container {\n    flex: 1 0;\n    padding-right: 2vw;\n    font-size: 20px; }\n  .about-page .bio-container .name {\n      font-size: 32px;\n      font-weight: 700;\n      padding-bottom: 10px; }\n  .about-page .bio-container .bio {\n      padding-bottom: 5px; }\n  .about-page .bio-container .instagram a {\n      color: inherit; }\n  .about-page .history {\n    flex: 2 0; }\n  .about-page .history .history-title {\n      font-size: 18px;\n      padding: 10px 0;\n      font-weight: 500; }\n  .about-page .history .section-projects {\n      display: flex;\n      padding-bottom: 5px; }\n  .about-page .history .section-projects .project-title, .about-page .history .section-projects .project-org {\n        font-size: 14px; }\n  .about-page .history .section-projects .project-title {\n        font-style: italic; }\n  .about-page .history .section-projects .project-org {\n        padding-left: 10px; }\n"
 
 /***/ }),
 
@@ -68,7 +68,12 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var ABOUT_INFO = {
     name: 'JANICE CHAN',
-    bio: 'Janice Chan is a set designer and freelance artist based in Utah, U.S.A. She is pursuing a B.F.A. in Theatre Design and Production at Utah Valley University.',
+    bio: 'Janice Chan is a scenic designer based in Utah. She is pursuing a B.F.A. in Theatre Arts: Scenic Design at Utah Valley University. Janice has designed over 12 theatrical productions since her debut in 2017. She also paints scenery for the annual Utah Renaissance Faire in Lehi, Utah. Janice grew up in Melbourne, Australia, and currently resides in Vineyard, Utah.',
+    instagram: {
+        userName: '@ninetiestragedy',
+        url: 'https://www.instagram.com/ninetiestragedy/',
+    },
+    contact: 'contact@janicechan.design',
     history: {
         title: 'SCENIC & PROPERTIES DESIGN',
         sections: [
@@ -496,7 +501,7 @@ var ArtPageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"contact-footer\">\n  <mat-toolbar>\n    <mat-toolbar-row>\n      <div class=\"jc-toolbar-row\">\n        JANICECHAN.DESIGN\n      </div>\n    </mat-toolbar-row>\n    <mat-toolbar-row>\n      <div class=\"jc-toolbar-row\">\n        <a href=\"mailto:contact@janicechan.design\">\n            CONTACT@JANICECHAN.DESIGN\n        </a>\n      </div>\n    </mat-toolbar-row>\n    <mat-toolbar-row>\n      <div class=\"jc-toolbar-row\">\n        &copy; 2019 JANICE CHAN\n      </div>\n    </mat-toolbar-row>\n  </mat-toolbar>\n</div>\n"
+module.exports = "<div class=\"contact-footer\">\n  <mat-toolbar>\n    <mat-toolbar-row>\n        <div class=\"jc-toolbar-row jc-copyright\">\n            &copy; 2019 JANICE CHAN\n          </div>\n      <div class=\"jc-toolbar-row\">\n        janicechan.design\n      </div>\n      <div class=\"jc-toolbar-row jc-contact\">\n        <a href=\"mailto:contact@janicechan.design\">\n            contact@janicechan.design\n        </a>\n      </div>\n    </mat-toolbar-row>\n  </mat-toolbar>\n</div>\n"
 
 /***/ }),
 
@@ -507,7 +512,7 @@ module.exports = "<div class=\"contact-footer\">\n  <mat-toolbar>\n    <mat-tool
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".contact-footer {\n  box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.2); }\n  .contact-footer .mat-toolbar {\n    height: 92px;\n    padding: 20px;\n    background: #FFF;\n    height: auto;\n    padding: 10px; }\n  .contact-footer .mat-toolbar .mat-toolbar-row {\n      height: auto; }\n  .contact-footer .mat-toolbar .jc-toolbar-row {\n      font-size: 18px;\n      box-sizing: border-box;\n      text-align: center;\n      width: 100%; }\n"
+module.exports = ".contact-footer {\n  box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.2); }\n  .contact-footer .mat-toolbar {\n    height: 92px;\n    padding: 20px;\n    background: #FFF;\n    font-weight: 100;\n    height: auto;\n    padding: 10px; }\n  .contact-footer .mat-toolbar .mat-toolbar-row {\n      height: auto; }\n  .contact-footer .mat-toolbar .jc-toolbar-row {\n      font-size: 18px;\n      box-sizing: border-box;\n      text-align: center;\n      width: 100%; }\n  .contact-footer .mat-toolbar .jc-toolbar-row.jc-copyright {\n        text-align: left; }\n  .contact-footer .mat-toolbar .jc-toolbar-row.jc-contact {\n        text-align: right; }\n  .contact-footer .mat-toolbar .jc-toolbar-row.jc-contact > a {\n          color: inherit; }\n"
 
 /***/ }),
 

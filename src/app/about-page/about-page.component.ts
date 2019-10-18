@@ -2,7 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 const ABOUT_INFO = {
   name: 'JANICE CHAN',
-  bio: 'Janice Chan is a set designer and freelance artist based in Utah, U.S.A. She is pursuing a B.F.A. in Theatre Design and Production at Utah Valley University.',
+  bio: 'Janice Chan is a scenic designer based in Utah. She is pursuing a B.F.A. in Theatre Arts: Scenic Design at Utah Valley University. Janice has designed over 12 theatrical productions since her debut in 2017. She also paints scenery for the annual Utah Renaissance Faire in Lehi, Utah. Janice grew up in Melbourne, Australia, and currently resides in Vineyard, Utah.',
+  instagram: {
+    userName: '@ninetiestragedy',
+    url: 'https://www.instagram.com/ninetiestragedy/',
+  },
+  contact: 'contact@janicechan.design',
   history: {
     title: 'SCENIC & PROPERTIES DESIGN',
     sections: [

@@ -1,10 +1,22 @@
 
 <div class="about-page page">
-  <div class="name">
-    {{info.name}}
-  </div>
-  <div class="bio">
-    {{info.bio}}
+  <div class="bio-container">
+    <div class="name">
+      {{info.name}}
+    </div>
+    <div class="bio">
+      {{info.bio}}
+    </div>
+    <div class="instagram">
+      <span>
+        IG
+      </span>
+      <span>
+        <a href="{{info.instagram.url}}">
+          {{info.instagram.userName}}
+        </a>
+      </span>
+    </div>
   </div>
   <div class="history">
     <div class="history-title">
