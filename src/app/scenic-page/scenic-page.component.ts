@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import GalleryImage from '../shared/gallery-image';
 import { NgxMasonryOptions } from 'ngx-masonry';
 import Gallery from '../shared/gallery';
 import { GalleryService } from '../shared/gallery.service';
 import GALLERY from '../shared/gallery-enum';
 
 const SCENIC_GALLERIES = [
+  GALLERY.MRBURNS,
   GALLERY.LARAMIE,
   GALLERY.THE_DRAG,
   GALLERY.NEXT_FALL,

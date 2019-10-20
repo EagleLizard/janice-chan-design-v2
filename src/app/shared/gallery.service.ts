@@ -7,6 +7,24 @@ import imageUris from 'src/app/shared/image-uris';
 
 const GALLERY_PAGES: Gallery[] = [
   new Gallery(
+    GALLERY.MRBURNS,
+    imageUris.MRBURNS_GALLERY,
+    'Mr. Burns, a Post-Electric Play',
+    'mr-burns',
+    'An Other Theater Company',
+    'scenic designer, props designer, muralist',
+    [
+      'Directors: Kacey Spadafora, Taylor Jack Nelson',
+      'Lights: Emma Belnap',
+      'Sound: Kaecy Spadafora',
+      'Costumes: Janae Lefleur',
+      'Photos: Laura Chapman, Janice Chan',
+
+    ],
+    '2019',
+    'Location: Provo, Utah, U.S.A.',
+  ),
+  new Gallery(
     GALLERY.LARAMIE,
     imageUris.LARAMIE_GALLERY,
     'The Laramie Project',

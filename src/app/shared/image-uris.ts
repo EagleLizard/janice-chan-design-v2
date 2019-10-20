@@ -18,6 +18,7 @@ const NEXT_FALL = imageUri('nextfall.jpg');
 const CABARET = imageUri('cabaret.jpg');
 const THE_DRAG = imageUri('thedrag.jpg');
 const LARAMIE = imageUri('laramie.jpg');
+const MRBURNS = imageUri('mrburns.jpg')
 
 const ART_GALLERY = imageUris([
   'art/art1.png',
@@ -32,6 +33,20 @@ const ART_GALLERY = imageUris([
   'art/art10.jpg',
   'art/art11.jpg',
   'art/art12.png',
+]);
+
+const MRBURNS_GALLERY = imageUris([
+  'mrburns/mrburns1.jpg',
+  'mrburns/mrburns2.jpg',
+  'mrburns/mrburns3.jpg',
+  'mrburns/mrburns4.jpg',
+  'mrburns/mrburns5.jpg',
+  'mrburns/mrburns6.jpg',
+  'mrburns/mrburns7.jpg',
+  'mrburns/mrburns8.jpg',
+  'mrburns/mrburns9.jpg',
+  'mrburns/mrburns10.jpg',
+  'mrburns/mrburns11.jpg',
 ]);
 
 const LARAMIE_GALLERY = imageUris([
@@ -219,6 +234,7 @@ export default <any> {
   CABARET,
   THE_DRAG,
   LARAMIE,
+  MRBURNS,
 
   TRIBES_GALLERY,
   FAT_PIG_GALLERY,
@@ -233,6 +249,7 @@ export default <any> {
   THE_DRAG_GALLERY,
   ART_GALLERY,
   LARAMIE_GALLERY,
+  MRBURNS_GALLERY,
 };
 
 function imageUri(fileKey: string) {

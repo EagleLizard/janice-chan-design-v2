@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import imageUris from './image-uris';
 import GalleryImage from './gallery-image';
 import GALLERY from './gallery-enum';
-import { Observable, combineLatest } from 'rxjs';
 
 const SCENIC_IMAGES = [
   new GalleryImage(
@@ -52,6 +51,10 @@ const SCENIC_IMAGES = [
   new GalleryImage(
     imageUris.LARAMIE,
     GALLERY.LARAMIE,
+  ),
+  new GalleryImage(
+    imageUris.MRBURNS,
+    GALLERY.MRBURNS,
   ),
 ];
 
