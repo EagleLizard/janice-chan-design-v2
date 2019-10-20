@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import imageUris from '../shared/image-uris';
 
 const ABOUT_INFO = {
   name: 'JANICE CHAN',
@@ -15,6 +16,24 @@ const ABOUT_INFO = {
         title: 'Current & Upcoming',
         projects: [
           {
+            title: 'Sweeney Todd: The Demon Barber of Fleet Street',
+            org: '(Noorda Center for Performing Arts & Utah Repertory Theater)'
+          },
+          {
+            title: 'Unchanged Voices, a Devised Play Addressing Conversion Therapy',
+            org: '(Utah Valley University)'
+          },
+        ]
+      },
+      {
+        title: '2019',
+        projects: [
+
+          {
+            title: 'The Laramie Project',
+            org: '(Utah Valley University)'
+          },
+          {
             title: 'The Taming of the Shrew',
             org: '(Utah Valley University)'
           },
@@ -24,15 +43,6 @@ const ABOUT_INFO = {
           },
           {
             title: 'Urinetown the Musical',
-            org: '(Utah Valley University)'
-          },
-        ]
-      },
-      {
-        title: '2019',
-        projects: [
-          {
-            title: 'The Laramie Project',
             org: '(Utah Valley University)'
           },
         ]
@@ -107,6 +117,7 @@ const ABOUT_INFO = {
 })
 export class AboutPageComponent implements OnInit {
   info = ABOUT_INFO;
+  bioImage = imageUris.JANU;
   constructor() { }
 
   ngOnInit() {
