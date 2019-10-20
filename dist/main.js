@@ -759,7 +759,7 @@ module.exports = "<div \n  class=\"page-tile\"\n  (mouseover)=\"hover(true)\"\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".page-tile {\n  position: relative;\n  text-align: center;\n  overflow: hidden; }\n  .page-tile img {\n    transition: opacity 0.4s ease, -webkit-transform 0.4s ease;\n    transition: transform 0.4s ease, opacity 0.4s ease;\n    transition: transform 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease; }\n  .page-tile img.hovered {\n      -webkit-transform: scale(1.3, 1.3);\n              transform: scale(1.3, 1.3); }\n  .page-tile .image-overlay {\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    width: 100%;\n    height: 100%;\n    opacity: 0; }\n  .page-tile .image-overlay:hover {\n      background-color: rgba(255, 255, 255, 0.7);\n      opacity: 1;\n      cursor: pointer; }\n  .page-tile .image-overlay .overlay-text-container {\n      font-size: 32px;\n      position: absolute;\n      color: #000;\n      top: 10px;\n      left: 10px;\n      text-align: left; }\n"
+module.exports = ".page-tile {\n  position: relative;\n  text-align: center;\n  overflow: hidden; }\n  .page-tile img {\n    transition: opacity 0.4s ease, -webkit-transform 0.4s ease;\n    transition: transform 0.4s ease, opacity 0.4s ease;\n    transition: transform 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease; }\n  .page-tile img.hovered {\n      -webkit-transform: scale(1.3, 1.3);\n              transform: scale(1.3, 1.3); }\n  .page-tile .image-overlay {\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    width: 100%;\n    height: 100%;\n    opacity: 0; }\n  .page-tile .image-overlay:hover {\n      background-color: rgba(255, 255, 255, 0.7);\n      opacity: 1;\n      cursor: pointer; }\n  .page-tile .image-overlay .overlay-text-container {\n      font-size: 32px;\n      position: absolute;\n      color: #000;\n      top: 10px;\n      left: 10px;\n      text-align: left;\n      padding-right: 10px; }\n"
 
 /***/ }),
 
@@ -867,6 +867,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var SCENIC_GALLERIES = [
+    _shared_gallery_enum__WEBPACK_IMPORTED_MODULE_2__["default"].MRBURNS,
     _shared_gallery_enum__WEBPACK_IMPORTED_MODULE_2__["default"].LARAMIE,
     _shared_gallery_enum__WEBPACK_IMPORTED_MODULE_2__["default"].THE_DRAG,
     _shared_gallery_enum__WEBPACK_IMPORTED_MODULE_2__["default"].NEXT_FALL,
@@ -936,6 +937,7 @@ var GALLERY;
     GALLERY["CABARET"] = "CABARET";
     GALLERY["ART"] = "ART";
     GALLERY["LARAMIE"] = "LARAMIE";
+    GALLERY["MRBURNS"] = "MRBURNS";
 })(GALLERY || (GALLERY = {}));
 /* harmony default export */ __webpack_exports__["default"] = (GALLERY);
 
@@ -1019,6 +1021,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var GALLERY_PAGES = [
+    new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].MRBURNS, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].MRBURNS_GALLERY, 'Mr. Burns, a Post-Electric Play', 'mr-burns', 'An Other Theater Company', 'scenic designer, props designer, muralist', [
+        'Directors: Kacey Spadafora, Taylor Jack Nelson',
+        'Lights: Emma Belnap',
+        'Sound: Kaecy Spadafora',
+        'Costumes: Janae Lefleur',
+        'Photos: Laura Chapman, Janice Chan',
+    ], '2019', 'Location: Provo, Utah, U.S.A.'),
     new _gallery__WEBPACK_IMPORTED_MODULE_2__["default"](_gallery_enum__WEBPACK_IMPORTED_MODULE_1__["default"].LARAMIE, src_app_shared_image_uris__WEBPACK_IMPORTED_MODULE_4__["default"].LARAMIE_GALLERY, 'The Laramie Project', 'the-laramie-project', 'Utah Valley University', 'scenic & props designer', [
         'Director: Laurie Harrop-Purser',
         'Lights: Colin Skip Wilson',
@@ -1224,6 +1233,7 @@ var NEXT_FALL = imageUri('nextfall.jpg');
 var CABARET = imageUri('cabaret.jpg');
 var THE_DRAG = imageUri('thedrag.jpg');
 var LARAMIE = imageUri('laramie.jpg');
+var MRBURNS = imageUri('mrburns.jpg');
 var ART_GALLERY = imageUris([
     'art/art1.png',
     'art/art2.png',
@@ -1237,6 +1247,26 @@ var ART_GALLERY = imageUris([
     'art/art10.jpg',
     'art/art11.jpg',
     'art/art12.png',
+]);
+var MRBURNS_GALLERY = imageUris([
+    'mrburns/mrburns1.jpg',
+    'mrburns/mrburns2.jpg',
+    'mrburns/mrburns3.jpg',
+    'mrburns/mrburns4.jpg',
+    'mrburns/mrburns5.jpg',
+    'mrburns/mrburns6.jpg',
+    'mrburns/mrburns7.jpg',
+    'mrburns/mrburns8.jpg',
+    'mrburns/mrburns9.jpg',
+    'mrburns/mrburns10.jpg',
+    'mrburns/mrburns11.jpg',
+    'mrburns/mrburns12.jpg',
+    'mrburns/mrburns13.jpg',
+    'mrburns/mrburns14.jpg',
+    'mrburns/mrburns15.jpg',
+    'mrburns/mrburns16.jpg',
+    'mrburns/mrburns17.jpg',
+    'mrburns/mrburns18.jpg',
 ]);
 var LARAMIE_GALLERY = imageUris([
     'laramie/laramie1.jpg',
@@ -1410,6 +1440,7 @@ var RENAISSANCE_FAIRE_GALLERY = imageUris([
     CABARET: CABARET,
     THE_DRAG: THE_DRAG,
     LARAMIE: LARAMIE,
+    MRBURNS: MRBURNS,
     TRIBES_GALLERY: TRIBES_GALLERY,
     FAT_PIG_GALLERY: FAT_PIG_GALLERY,
     UVU_GALLERY: UVU_GALLERY,
@@ -1423,6 +1454,7 @@ var RENAISSANCE_FAIRE_GALLERY = imageUris([
     THE_DRAG_GALLERY: THE_DRAG_GALLERY,
     ART_GALLERY: ART_GALLERY,
     LARAMIE_GALLERY: LARAMIE_GALLERY,
+    MRBURNS_GALLERY: MRBURNS_GALLERY,
 });
 function imageUri(fileKey) {
     return "" + BASEPATH + fileKey;
@@ -1474,6 +1506,7 @@ var SCENIC_IMAGES = [
     new _gallery_image__WEBPACK_IMPORTED_MODULE_2__["default"](_image_uris__WEBPACK_IMPORTED_MODULE_1__["default"].RENAISSANCE_FAIRE, _gallery_enum__WEBPACK_IMPORTED_MODULE_3__["default"].RENAISSANCE_FAIRE),
     new _gallery_image__WEBPACK_IMPORTED_MODULE_2__["default"](_image_uris__WEBPACK_IMPORTED_MODULE_1__["default"].CABARET, _gallery_enum__WEBPACK_IMPORTED_MODULE_3__["default"].CABARET),
     new _gallery_image__WEBPACK_IMPORTED_MODULE_2__["default"](_image_uris__WEBPACK_IMPORTED_MODULE_1__["default"].LARAMIE, _gallery_enum__WEBPACK_IMPORTED_MODULE_3__["default"].LARAMIE),
+    new _gallery_image__WEBPACK_IMPORTED_MODULE_2__["default"](_image_uris__WEBPACK_IMPORTED_MODULE_1__["default"].MRBURNS, _gallery_enum__WEBPACK_IMPORTED_MODULE_3__["default"].MRBURNS),
 ];
 var ImageService = /** @class */ (function () {
     function ImageService() {
