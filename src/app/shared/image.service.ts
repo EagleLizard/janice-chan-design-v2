@@ -5,6 +5,14 @@ import GALLERY from './gallery-enum';
 
 const SCENIC_IMAGES = [
   new GalleryImage(
+    imageUris.URINETOWN,
+    GALLERY.URINETOWN,
+  ),
+  new GalleryImage(
+    imageUris.TAMINGOFTHESHREW,
+    GALLERY.TAMINGOFTHESHREW,
+  ),
+  new GalleryImage(
     imageUris.THE_DRAG,
     GALLERY.THE_DRAG,
   ),

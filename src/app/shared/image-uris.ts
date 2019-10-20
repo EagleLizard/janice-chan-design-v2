@@ -19,6 +19,8 @@ const CABARET = imageUri('cabaret.jpg');
 const THE_DRAG = imageUri('thedrag.jpg');
 const LARAMIE = imageUri('laramie.jpg');
 const MRBURNS = imageUri('mrburns.jpg')
+const TAMINGOFTHESHREW = imageUri('tamingoftheshrew.jpg');
+const URINETOWN = imageUri('urinetown.jpg');
 
 const ART_GALLERY = imageUris([
   'art/art1.png',
@@ -33,6 +35,37 @@ const ART_GALLERY = imageUris([
   'art/art10.jpg',
   'art/art11.jpg',
   'art/art12.png',
+]);
+
+const TAMINGOFTHESHREW_GALLERY = imageUris([
+  'tamingoftheshrew/tamingoftheshrew1.jpg',
+  'tamingoftheshrew/tamingoftheshrew2.jpg',
+  'tamingoftheshrew/tamingoftheshrew3.jpg',
+  'tamingoftheshrew/tamingoftheshrew4.jpg',
+  'tamingoftheshrew/tamingoftheshrew5.jpg',
+  'tamingoftheshrew/tamingoftheshrew6.jpg',
+  'tamingoftheshrew/tamingoftheshrew7.jpg',
+  'tamingoftheshrew/tamingoftheshrew8.jpg',
+  'tamingoftheshrew/tamingoftheshrew9.jpg',
+  'tamingoftheshrew/tamingoftheshrew10.jpg',
+]);
+
+const URINETOWN_GALLERY = imageUris([
+  'urinetown/urinetown1.jpg',
+  'urinetown/urinetown2.jpg',
+  'urinetown/urinetown3.jpg',
+  'urinetown/urinetown4.jpg',
+  'urinetown/urinetown5.jpg',
+  'urinetown/urinetown6.jpg',
+  'urinetown/urinetown7.jpg',
+  'urinetown/urinetown8.jpg',
+  'urinetown/urinetown9.jpg',
+  'urinetown/urinetown10.jpg',
+  'urinetown/urinetown11.jpg',
+  'urinetown/urinetown12.jpg',
+  'urinetown/urinetown13.jpg',
+  'urinetown/urinetown14.jpg',
+  'urinetown/urinetown15.jpg',
 ]);
 
 const MRBURNS_GALLERY = imageUris([
@@ -221,6 +254,9 @@ const RENAISSANCE_FAIRE_GALLERY = imageUris([
   'renaissancefaire/Shield2.png',
   'renaissancefaire/Shield3.png',
   'renaissancefaire/Shield4.png',
+  'renaissancefaire/renaissancefaire19_1.jpg',
+  'renaissancefaire/renaissancefaire19_2.jpg',
+  'renaissancefaire/renaissancefaire19_3.jpg',
 ]);
 
 export default <any> {
@@ -242,6 +278,8 @@ export default <any> {
   THE_DRAG,
   LARAMIE,
   MRBURNS,
+  TAMINGOFTHESHREW,
+  URINETOWN,
 
   TRIBES_GALLERY,
   FAT_PIG_GALLERY,
@@ -257,6 +295,8 @@ export default <any> {
   ART_GALLERY,
   LARAMIE_GALLERY,
   MRBURNS_GALLERY,
+  URINETOWN_GALLERY,
+  TAMINGOFTHESHREW_GALLERY,
 };
 
 function imageUri(fileKey: string) {

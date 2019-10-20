@@ -7,6 +7,42 @@ import imageUris from 'src/app/shared/image-uris';
 
 const GALLERY_PAGES: Gallery[] = [
   new Gallery(
+    GALLERY.URINETOWN,
+    imageUris.URINETOWN_GALLERY,
+    'Urinetown: The Musical',
+    'urinetown-the-musical',
+    'Utah Valley University',
+    'scenic & props designer',
+    [
+      'scenic & props designer',
+      'Director: Matthew Herrick',
+      'Assistant: Gavin Henry',
+      'Lights: Colin Skip Wilson',
+      'Sound: Nathan Lowry',
+      'Costumes: Mallory Goodman',
+    ],
+    '2019',
+    'Location: Orem, Utah, U.S.A.',
+  ),
+  new Gallery(
+    GALLERY.TAMINGOFTHESHREW,
+    imageUris.TAMINGOFTHESHREW_GALLERY,
+    'Taming Of The Shrew',
+    'taming-of-the-shrew',
+    'Utah Valley University',
+    'scenic & props designer',
+    [
+      'Director: Shelby Gist',
+      'Lights: Emma Belnap',
+      'Sound: Hayley Christensen',
+      'Costumes: Danae Devey',
+      'Makeup & Hair: Alanna Cottam',
+      'Photos: Shelby Gist, Janice Chan',
+    ],
+    '2019',
+    'Location: Orem, Utah, U.S.A.',
+  ),
+  new Gallery(
     GALLERY.MRBURNS,
     imageUris.MRBURNS_GALLERY,
     'Mr. Burns, a Post-Electric Play',
