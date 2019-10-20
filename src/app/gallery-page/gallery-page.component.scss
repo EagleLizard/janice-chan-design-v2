@@ -6,7 +6,8 @@
   // BEGIN Media query specific styles
   display: flex;
   .gallery-detail {
-    flex: 2 1;
+    flex: 2 0;
+    min-width: 405px;
   }
   .gallery-images {
     flex: 3 0;
