@@ -47,6 +47,13 @@ const MRBURNS_GALLERY = imageUris([
   'mrburns/mrburns9.jpg',
   'mrburns/mrburns10.jpg',
   'mrburns/mrburns11.jpg',
+  'mrburns/mrburns12.jpg',
+  'mrburns/mrburns13.jpg',
+  'mrburns/mrburns14.jpg',
+  'mrburns/mrburns15.jpg',
+  'mrburns/mrburns16.jpg',
+  'mrburns/mrburns17.jpg',
+  'mrburns/mrburns18.jpg',
 ]);
 
 const LARAMIE_GALLERY = imageUris([
