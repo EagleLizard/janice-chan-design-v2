@@ -16,6 +16,15 @@ const ABOUT_INFO = {
         title: 'Current & Upcoming',
         projects: [
           {
+            title: 'Noises Off',
+            org: '(Utah Valley University)',
+          },
+        ]
+      },
+      {
+        title: '2019',
+        projects: [
+          {
             title: 'Sweeney Todd: The Demon Barber of Fleet Street',
             org: '(Noorda Center for Performing Arts & Utah Repertory Theater)'
           },
@@ -23,12 +32,6 @@ const ABOUT_INFO = {
             title: 'Unchanged Voices, a Devised Play Addressing Conversion Therapy',
             org: '(Utah Valley University)'
           },
-        ]
-      },
-      {
-        title: '2019',
-        projects: [
-
           {
             title: 'The Laramie Project',
             org: '(Utah Valley University)'
