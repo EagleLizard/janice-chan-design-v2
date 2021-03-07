@@ -1,5 +1,7 @@
 
-const BASEPATH = 'https://eaglelizard-files.herokuapp.com/';
+const BASEPATH = 'https://eaglelizard-files.herokuapp.com/v2/image/';
+// const BASEPATH = 'http://localhost:4269/image/';
+// const BASEPATH = 'http://localhost:4269/v2/image/';
 
 const LOGO = imageUri('WebsiteLogo-min.png');
 const HOME = imageUri('projects-home.png');
