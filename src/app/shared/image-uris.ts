@@ -63,16 +63,15 @@ const SWEENEY_GALLERY = imageUris([
 ]);
 
 const TAMINGOFTHESHREW_GALLERY = imageUris([
-  'tamingoftheshrew/tamingoftheshrew1.jpg',
-  'tamingoftheshrew/tamingoftheshrew2.jpg',
-  'tamingoftheshrew/tamingoftheshrew3.jpg',
-  'tamingoftheshrew/tamingoftheshrew4.jpg',
-  'tamingoftheshrew/tamingoftheshrew5.jpg',
-  'tamingoftheshrew/tamingoftheshrew6.jpg',
-  'tamingoftheshrew/tamingoftheshrew7.jpg',
-  'tamingoftheshrew/tamingoftheshrew8.jpg',
-  'tamingoftheshrew/tamingoftheshrew9.jpg',
-  'tamingoftheshrew/tamingoftheshrew10.jpg',
+  'tamingoftheshrew-2021/tamingoftheshrew1.jpg',
+  'tamingoftheshrew-2021/tamingoftheshrew2.jpg',
+  'tamingoftheshrew-2021/tamingoftheshrew3.jpg',
+  'tamingoftheshrew-2021/tamingoftheshrew4.jpg',
+  'tamingoftheshrew-2021/tamingoftheshrew5.jpg',
+  'tamingoftheshrew-2021/tamingoftheshrew6.jpg',
+  'tamingoftheshrew-2021/tamingoftheshrew7.jpg',
+  'tamingoftheshrew-2021/tamingoftheshrew8.jpg',
+  'tamingoftheshrew-2021/tamingoftheshrew9.jpg',
 ]);
 
 const URINETOWN_GALLERY = imageUris([
