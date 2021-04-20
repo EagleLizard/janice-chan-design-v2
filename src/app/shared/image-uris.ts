@@ -39,6 +39,15 @@ const ART_GALLERY = imageUris([
   'art/art10.jpg',
   'art/art11.jpg',
   'art/art12.png',
+  'renaissancefaire/renaissancefaire1.jpg',
+  'renaissancefaire/renaissancefaire2.jpg',
+  'renaissancefaire/Shield1.png',
+  'renaissancefaire/Shield2.png',
+  'renaissancefaire/Shield3.png',
+  'renaissancefaire/Shield4.png',
+  'renaissancefaire/renaissancefaire19_1.jpg',
+  'renaissancefaire/renaissancefaire19_2.jpg',
+  'renaissancefaire/renaissancefaire19_3.jpg',
 ]);
 
 const CINDERELLA_GALLERY = imageUris([
