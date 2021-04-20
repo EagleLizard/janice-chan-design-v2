@@ -67,7 +67,11 @@ const SCENIC_IMAGES = [
   new GalleryImage(
     imageUris.SWEENEY,
     GALLERY.SWEENEY,
-  )
+  ),
+  new GalleryImage(
+    imageUris.CINDERELLA,
+    GALLERY.CINDERELLA,
+  ),
 ];
 
 @Injectable({

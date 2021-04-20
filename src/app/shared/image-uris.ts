@@ -24,6 +24,7 @@ const MRBURNS = imageUri('mrburns.jpg')
 const TAMINGOFTHESHREW = imageUri('tamingoftheshrew.jpg');
 const URINETOWN = imageUri('urinetown.jpg');
 const SWEENEY = imageUri('sweeney.jpg');
+const CINDERELLA = imageUri('cinderella.jpg');
 
 const ART_GALLERY = imageUris([
   'art/art1.png',
@@ -38,6 +39,16 @@ const ART_GALLERY = imageUris([
   'art/art10.jpg',
   'art/art11.jpg',
   'art/art12.png',
+]);
+
+const CINDERELLA_GALLERY = imageUris([
+  'cinderella/cinderella1.jpg',
+  'cinderella/cinderella2.jpg',
+  'cinderella/cinderella3.jpg',
+  'cinderella/cinderella4.jpg',
+  'cinderella/cinderella5.jpg',
+  'cinderella/cinderella6.jpg',
+  'cinderella/cinderella7.jpg',
 ]);
 
 const SWEENEY_GALLERY = imageUris([
@@ -295,6 +306,7 @@ export default <any> {
   TAMINGOFTHESHREW,
   URINETOWN,
   SWEENEY,
+  CINDERELLA,
 
   TRIBES_GALLERY,
   FAT_PIG_GALLERY,
@@ -313,6 +325,7 @@ export default <any> {
   URINETOWN_GALLERY,
   TAMINGOFTHESHREW_GALLERY,
   SWEENEY_GALLERY,
+  CINDERELLA_GALLERY,
 };
 
 function imageUri(fileKey: string) {

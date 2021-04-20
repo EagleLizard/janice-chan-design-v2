@@ -7,6 +7,22 @@ import imageUris from 'src/app/shared/image-uris';
 
 const GALLERY_PAGES: Gallery[] = [
   new Gallery(
+    GALLERY.CINDERELLA,
+    imageUris.CINDERELLA_GALLERY,
+    'Cinderella Eats Rice and Beans',
+    'cinderella',
+    'Utah Valley University',
+    'scenic and props designer',
+    [
+      'Director: Megan Ann Rasmussen',
+      'Costumes: Michelle Walling',
+      'Hair & Makeup: Kiyomi Coronado',
+      'Photos: Suzy Oliveira',
+    ],
+    '2021',
+    'Location: Orem, Utah, U.S.A.',
+  ),
+  new Gallery(
     GALLERY.SWEENEY,
     imageUris.SWEENEY_GALLERY,
     'Sweeney Todd: The Demon Barber of Fleet Street',

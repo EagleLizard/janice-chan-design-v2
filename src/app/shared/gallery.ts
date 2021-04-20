@@ -34,7 +34,8 @@ export default class Gallery {
     this.credit = credit;
     this.description = description;
     this.year = year;
-    this.location = location;
+    // this.location = location;
+    this.location = '';
   }
 
   setImage(image: GalleryImage){
