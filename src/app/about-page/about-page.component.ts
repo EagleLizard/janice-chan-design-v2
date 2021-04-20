@@ -3,8 +3,10 @@ import imageUris from '../shared/image-uris';
 
 const ABOUT_INFO = {
   name: 'JANICE CHAN',
-  bio: 'Janice Chan is a scenic designer based in Utah. She is pursuing a B.F.A. in Theatre Arts: Scenic Design at Utah Valley University. Janice has designed over 12 theatrical productions since her debut in 2017. She also paints scenery for the annual Utah Renaissance Faire in Lehi, Utah. Janice grew up in Melbourne, Australia, and currently resides in Vineyard, Utah.',
+  bio: 'Janice Chan is a scenic designer based in Utah County, highly driven by storytelling and moved by conceptual art and surrealism. She holds a B.F.A. in Theatre Arts: Scenic Design from Utah Valley University. Her work primarily consists of design for the stage, with experience in painting sets and murals for Sundance Summer Theatre, Utah Renaissance Faire, and An Other Theater Company, and producing scenic draftings for theatrical and architectural designs. Janice is a professional organizer, marketing and social media connoisseur, and a graphic design enthusiast. Janice enjoys exploring local natural scenery, eternally drawing inspiration from mountainscapes and finding beauty in the mundane, and not labelling herself as a foodie*. She is committed to projects that serve marginalized communities, and supports safe and accessible entertainment practices during the pandemic and beyond. Janice is a first-generation immigrant from Hong Kong and Melbourne, Australia, and currently resides in the fastest growing city in Utah.',
+  bioLine2: '*Janice is 110% a foodie.',
   instagram: {
+    igPrefix: 'Follow Janice on Instagram',
     userName: '@ninetiestragedy',
     url: 'https://www.instagram.com/ninetiestragedy/',
   },

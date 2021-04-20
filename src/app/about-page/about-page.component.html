@@ -5,14 +5,24 @@
       {{info.name}}
     </div>
     <div class="bio">
-      {{info.bio}}
-    </div>
-    <div class="instagram">
       <span>
-        <a href="{{info.instagram.url}}">
-          {{info.instagram.userName}}
-        </a>
+        {{info.bio}}
       </span>
+      <span class="instagram">
+        <span>
+          {{info.instagram.igPrefix}}&nbsp;
+        </span>
+        <span>
+          <a href="{{info.instagram.url}}">
+            {{info.instagram.userName}}
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="bio">
+      <em>
+        {{info.bioLine2}}
+      </em>
     </div>
     <div class="bio-image">
       <img src="{{bioImage}}">
