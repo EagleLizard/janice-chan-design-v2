@@ -18,7 +18,7 @@ export class PageTileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.gallery);
+
   }
 
   hover(isHover: boolean){

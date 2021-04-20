@@ -36,7 +36,6 @@ export class GalleryPageComponent implements OnInit {
       columnWidth: THUMB_SIZE
     };
     this.route.params.subscribe(params => {
-      console.log(params);
       if(params.gallery){
         this.gallery = this.galleryService.getGalleryByRoute(params.gallery);
         this.lightboxImages = this.gallery.getLightboxImages(THUMB_SIZE);
