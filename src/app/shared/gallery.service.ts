@@ -56,6 +56,8 @@ const GALLERY_PAGES: Gallery[] = [
       'Lights: Colin Skip Wilson',
       'Sound: Nathan Lowry',
       'Costumes: Mallory Goodman',
+      'Hair & Makeup: Kate Backman',
+      'Photos: Jeremy Hall',
     ],
     '2019',
     'Location: Orem, Utah, U.S.A.',
