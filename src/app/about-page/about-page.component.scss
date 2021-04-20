@@ -1,14 +1,19 @@
 @import 'src/app/global';
+@import 'src/app/responsive';
 
 .about-page{
   display: flex;
 
   .bio-container {
-    flex: 1 0;
+    flex: 3 0;
     padding-right: 2vw;
-    font-size: $font-sm;
+    font-size: 16px;
+    // min-width: 30vw;
+    @include smallscreen {
+      min-width: 50vw;
+    }
     .name {
-      font-size: $font-lg;
+      font-size: $font-xlg;
       font-weight: 700;
       padding-bottom: 10px;
     }
@@ -23,13 +28,17 @@
 
     .bio-image {
       padding-top: 20px;
+      img {
+        max-width: 100%;
+      }
     }
   }
 
   .history {
-    flex: 2 0;
+    flex: 7 1;
+    // width: 60vw;
     .history-title {
-      font-size: $font-xs;
+      font-size: $font-md;
       padding: 10px 0;
       font-weight: 500;
     }
@@ -37,7 +46,7 @@
       display: flex;
       padding-bottom: 5px;
       .project-title, .project-org {
-        font-size: $font-xxs;
+        font-size: $font-xs;
       }
       .project-title {
         font-style: italic;

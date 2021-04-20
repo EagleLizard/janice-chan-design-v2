@@ -12,105 +12,127 @@ const ABOUT_INFO = {
   },
   contact: 'contact@janicechan.design',
   history: {
-    title: 'SCENIC & PROPERTIES DESIGN',
+    title: 'SCENIC DESIGNS, ASSISTANT WORK, AND CREATIVE PROJECTS',
     sections: [
-      {
-        title: 'Current & Upcoming',
-        projects: [
-          {
-            title: 'Noises Off',
-            org: '(Utah Valley University)',
-          },
-        ]
-      },
       {
         title: '2019',
         projects: [
           {
-            title: 'Sweeney Todd: The Demon Barber of Fleet Street',
-            org: '(Noorda Center for Performing Arts & Utah Repertory Theater)'
+            title: 'Cinderella Eats Rice and Beans',
+            org: '(Utah Valley University)',
           },
           {
-            title: 'Unchanged Voices, a Devised Play Addressing Conversion Therapy',
-            org: '(Utah Valley University)'
+            title: 'Festival of the Seas',
+            org: '(Loveland Living Planet Aquarium)',
+          },
+          {
+            title: 'Last Train to Nibroc',
+            org: '(An Other Theater Company)',
+          },
+          {
+            title: 'Timmon and the Magic Shoes',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Noises Off',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Unchanged Voices',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Urinetown: The Musical',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Sweeney Todd: The Demon Barber of Fleet Street',
+            org: '(Noorda Center for the Performing Arts)',
+          },
+          {
+            title: 'Taming of the Shrew',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Mr. Burns, A Post-Electric Play',
+            org: '(An Other Theater Company)',
+          },
+          {
+            title: 'Mamma Mia!',
+            org: '(Sundance Summer Theatre)',
           },
           {
             title: 'The Laramie Project',
-            org: '(Utah Valley University)'
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'A History of Breathing',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Cabaret',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'The Drag',
+            org: '(An Other Theater Company)',
+          },
+          {
+            title: 'Next Fall',
+            org: '(An Other Theater Company)',
+          },
+          {
+            title: 'Agamemnon',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Tribes',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Fat Pig',
+            org: '(An Other Theater Company)',
+          },
+          {
+            title: 'A Year with Frog and Toad',
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Joseph and the Technicolor Dreamcoat',
+            org: '(Sundance Summer Theatre)',
           },
           {
             title: 'The Taming of the Shrew',
-            org: '(Utah Valley University)'
-          },
-          {
-            title: 'Mr Burns, a Post-Electric Play',
-            org: '(An Other Theater Company)'
-          },
-          {
-            title: 'Urinetown the Musical',
-            org: '(Utah Valley University)'
-          },
-        ]
-      },
-      {
-        title: '2018',
-        projects: [
-          {
-            title: 'Fat Pig', 
-            org: '(An Other Theater Company)'
-          },
-          {
-            title: 'Tribes', 
-            org: '(Utah Valley University)'
-          },
-          {
-            title: 'Agamemnon', 
-            org: '(Utah Valley University)'
-          },
-          {
-            title: 'Next Fall', 
-            org: '(An Other Theater Company)'
-          },
-          {
-            title: 'The Drag', 
-            org: '(An Other Theater Company)'
-          },
-          {
-            title: 'A History of Breathing', 
-            org: '(Utah Valley University)'
-          },
-        ]
-      },
-      {
-        title: '2017',
-        projects: [
-          {
-            title: 'Hamlet',
-            org: '(Brigham Young University)'
-          },
-          {
-            title: 'The Taming of the Shrew',
-            org: '(Renaissance Now)'
+            org: '(Renaissance Now Theatre & Film)',
           },
           {
             title: 'Short Attention Span Theatre',
-            org: '(Utah Valley University)'
+            org: '(Utah Valley University)',
+          },
+          {
+            title: 'Hamlet',
+            org: '(Brigham Young University)',
           },
         ]
       },
-      {
-        title: 'ASSISTANT SCENIC DESIGN',
-        projects: [
-          {
-            title: 'Cabaret', 
-            org: '(Utah Valley University) 2018 BroadwayWorld Salt Lake City Awards Nomination',
-          },
-          {
-            title: 'A Year with Frog & Toad', 
-            org: '(Utah Valley University)',
-          }
-        ]
-      }
+      // {
+      //   title: '2018',
+      //   projects: [
+          
+      //   ]
+      // },
+      // {
+      //   title: '2017',
+      //   projects: [
+          
+      //   ]
+      // },
+      // {
+      //   title: 'ASSISTANT SCENIC DESIGN',
+      //   projects: [
+          
+      //   ]
+      // }
     ]
   }
 };
