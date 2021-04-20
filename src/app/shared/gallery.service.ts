@@ -7,6 +7,26 @@ import imageUris from 'src/app/shared/image-uris';
 
 const GALLERY_PAGES: Gallery[] = [
   new Gallery(
+    GALLERY.SWEENEY,
+    imageUris.SWEENEY_GALLERY,
+    'Sweeney Todd: The Demon Barber of Fleet Street',
+    'sweeney-todd',
+    'The Noorda Center for the Performing Arts & Utah Repertory Theater Company',
+    'associate set designer',
+    [
+      'Director: Tim Threlfall',
+      'Set: Josh Steadman',
+      'Props: Rachel Summerhalder',
+      'Lights: Jaron Kent Hermansen',
+      'Sound: Matthew Kupferer',
+      'Costumes: Nancy Cannon',
+      'Hair & Makeup: Samantha Lambson',
+      'Photos: Janice Chan',
+    ],
+    '2019',
+    'Location: Orem, Utah, U.S.A.',
+  ),
+  new Gallery(
     GALLERY.URINETOWN,
     imageUris.URINETOWN_GALLERY,
     'Urinetown: The Musical',

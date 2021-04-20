@@ -23,6 +23,7 @@ const LARAMIE = imageUri('laramie.jpg');
 const MRBURNS = imageUri('mrburns.jpg')
 const TAMINGOFTHESHREW = imageUri('tamingoftheshrew.jpg');
 const URINETOWN = imageUri('urinetown.jpg');
+const SWEENEY = imageUri('sweeney.jpg');
 
 const ART_GALLERY = imageUris([
   'art/art1.png',
@@ -37,6 +38,17 @@ const ART_GALLERY = imageUris([
   'art/art10.jpg',
   'art/art11.jpg',
   'art/art12.png',
+]);
+
+const SWEENEY_GALLERY = imageUris([
+  'sweeney/sweeney1.jpg',
+  'sweeney/sweeney2.jpg',
+  'sweeney/sweeney3.jpg',
+  'sweeney/sweeney4.jpg',
+  'sweeney/sweeney5.jpg',
+  'sweeney/sweeney6.jpg',
+  'sweeney/sweeney7.jpg',
+  'sweeney/sweeney8.jpg',
 ]);
 
 const TAMINGOFTHESHREW_GALLERY = imageUris([
@@ -282,6 +294,7 @@ export default <any> {
   MRBURNS,
   TAMINGOFTHESHREW,
   URINETOWN,
+  SWEENEY,
 
   TRIBES_GALLERY,
   FAT_PIG_GALLERY,
@@ -299,6 +312,7 @@ export default <any> {
   MRBURNS_GALLERY,
   URINETOWN_GALLERY,
   TAMINGOFTHESHREW_GALLERY,
+  SWEENEY_GALLERY,
 };
 
 function imageUri(fileKey: string) {

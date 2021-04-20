@@ -5,6 +5,7 @@ import { GalleryService } from '../shared/gallery.service';
 import GALLERY from '../shared/gallery-enum';
 
 const SCENIC_GALLERIES = [
+  GALLERY.SWEENEY,
   GALLERY.URINETOWN,
   GALLERY.TAMINGOFTHESHREW,
   GALLERY.MRBURNS,
