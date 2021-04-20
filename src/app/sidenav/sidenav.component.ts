@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavService, LINKS } from '../shared/nav.service';
-import { MatSidenav } from '@angular/material';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'jc-sidenav',
@@ -11,7 +11,7 @@ export class SidenavComponent implements OnInit {
 
   opened: boolean;
   links = LINKS;
-  @ViewChild('sidenav') sidenav: MatSidenav;
+  @ViewChild('sidenav', { static: true }) sidenav: MatSidenav;
 
   constructor(
     private navService: NavService,
