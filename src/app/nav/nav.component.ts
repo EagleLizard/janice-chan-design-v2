@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import imageUris from 'src/app/shared/image-uris';
-import { Request, RequestOptions } from '@angular/http';
 import { NavService, LINKS } from '../shared/nav.service';
 
 @Component({
@@ -13,20 +12,11 @@ export class NavComponent implements OnInit {
   links = LINKS;
 
   constructor(
-    private navService: NavService
+    private navService: NavService,
   ) { }
 
   ngOnInit() {
-    let request: Request, options: RequestOptions;
-    options = new RequestOptions({
-      url: imageUris.LOGO,
-      method: 'GET',
-      params: {
-        width: 183
-      }
-    });
-    request = new Request(options);
-    this.headerImg = request.url;
+    this.headerImg = `${imageUris.LOGO}?width=183`;
     this.links = LINKS;
   }
 
