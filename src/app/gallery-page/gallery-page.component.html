@@ -57,12 +57,15 @@
             <div
               class="media-item-link"
               *ngIf="mediaItem.link">
-              <a href="{{mediaItem.link.uri}}">
+              &nbsp;
+              <a
+                href="{{mediaItem.link.uri}}"
+                target="_blank">
                 {{ mediaItem.link.label }}
               </a>
             </div>
             <div class="media-item-publication">
-              {{ mediaItem.publication }}
+              &nbsp;{{ mediaItem.publication }}
             </div>
           </div>
         </div>

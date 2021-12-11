@@ -80,16 +80,29 @@ const GALLERY_PAGES: Gallery[] = [
     'Utah Valley University',
     'scenic & props designer',
     [
-      'scenic & props designer',
-      'Director: Matthew Herrick',
-      'Assistant: Gavin Henry',
-      'Lights: Colin Skip Wilson',
-      'Sound: Nathan Lowry',
-      'Costumes: Mallory Goodman',
-      'Hair & Makeup: Kate Backman',
-      'Photos: Jeremy Hall',
+      'Directed by Matthew Herrick',
+      'Technical Direction by Glenn Pepe',
+      'Assistant Scenic & Properties Design by Gavin Henry',
+      'Lighting Design by Colin Skip Wilson',
+      'Costume Design by Mallory Goodman',
+      'Hair & Makeup Design Kate Backman',
+      'Production Photography by Jeremy Hall',
     ],
-    '2019',
+    'September 2019',
+    [
+      {
+        description: '“The set, by Janice Chan, is hewn in rough scaffolding in browns and oranges and is cleverly constructed to break apart and accommodate the different scenes from the corporate suite to the sewer.”',
+        link: {
+          label: 'Urinetown at UVU is Streaming with Great Talent and Dark Humor',
+          uri: 'https://frontrowreviewersutah.com/?p=13681',
+        },
+        publication: '(Front Row Reviewers)'
+      }
+    ],
+    [
+      'Book by Greg Kotis',
+      'Music & Lyrics by Mark Hollmann & Greg Kotis',
+    ]
   ),
   new Gallery(
     GALLERY.TAMINGOFTHESHREW,
