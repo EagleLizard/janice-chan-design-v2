@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import imageUris from 'src/app/shared/image-uris';
 import { NavService, LINKS } from '../shared/nav.service';
 
+const LOGO_BASE_WIDTH = 1500;
+
 @Component({
   selector: 'jc-nav',
   templateUrl: './nav.component.html',
@@ -16,7 +18,7 @@ export class NavComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.headerImg = `${imageUris.LOGO}?width=183`;
+    this.headerImg = `${imageUris.LOGO}?width=${LOGO_BASE_WIDTH}`;
     this.links = LINKS;
   }
 
