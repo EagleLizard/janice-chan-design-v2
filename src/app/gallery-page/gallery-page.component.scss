@@ -41,6 +41,13 @@
       max-width: 100%;
     }
 
+    .gallery-title {
+      font-size: $font-xmd;
+      @include phone {
+        font-size: $font-xsm;
+      }
+    }
+
     .original-credits {
       padding-top: 5px;
       @include phone {
@@ -57,7 +64,7 @@
     }
 
     .self-credit {
-      font-size: $font-md;
+      font-size: $font-xsm;
       padding-top: 18px;
       @include phone {
         font-size: $font-sm;
@@ -65,12 +72,12 @@
       }
     }
     .extra-credit {
-      padding-top: 10px;
+      padding-top: 5px;
       @include phone {
         padding-top: 2px;
       }
       .extra-credit-item {
-        font-size: $font-sm;
+        font-size: $font-xs;
         padding-top: 5px;
         @include phone {
           font-size: $font-xxs;
@@ -79,32 +86,28 @@
       }
     }
 
-    .organization{
-      font-size: $font-lg;
+    .detail-footer{
+      font-size: $font-md;
+      padding-top: 20px;
       @include phone {
-        font-size: $font-xmd;
+        font-size: $font-sm;
+        padding-top: 7px;
       }
-      .gallery-title{
-        font-size: $font-md;
+    }
+
+    .organization{
+      .organization-title{
+        font-size: $font-sm;
         @include phone {
-          font-size: $font-sm;
+          font-size: $font-xs;
         }
       }
     }
 
-    .detail-footer{
-      font-size: $font-md;
-      padding-top: 40px;
-      @include phone {
-        font-size: $font-sm;
-        padding-top: 15px;
-      }
-    }
-
     .media-and-press {
-      padding-top: 40px;
+      padding-top: 20px;
       @include phone {
-        padding-top: 15px;
+        padding-top: 10px;
       }
       .media-and-press-heading {
         font-size: $font-md;
@@ -162,6 +165,10 @@
   .gallery-detail {
     box-sizing: border-box;
 
+    .gallery-title {
+      text-transform: uppercase;
+    }
+
     .original-credits {
       .original-credit {
         font-style: italic;
@@ -174,7 +181,8 @@
 
     .organization{
       display: inline-block;
-      .gallery-title {
+      .organization-title {
+        // text-transform: uppercase;
         text-align: left;
       }
     }
@@ -182,9 +190,6 @@
     .detail-footer{
       display: flex;
       justify-content: space-between;
-      .footer-location{
-        padding-left: 15px;
-      }
     }
 
     .media-and-press {

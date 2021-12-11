@@ -59,18 +59,53 @@ const GALLERY_PAGES: Gallery[] = [
     'Sweeney Todd: The Demon Barber of Fleet Street',
     'sweeney-todd',
     'The Noorda Center for the Performing Arts & Utah Repertory Theater Company',
-    'associate set designer',
+    'associate set design',
     [
-      'Director: Tim Threlfall',
-      'Set: Josh Steadman',
-      'Props: Rachel Summerhalder',
-      'Lights: Jaron Kent Hermansen',
-      'Sound: Matthew Kupferer',
-      'Costumes: Nancy Cannon',
-      'Hair & Makeup: Samantha Lambson',
-      'Photos: Janice Chan',
+      'Directed by Tim Threlfall',
+      'Technical Direction & Build by Nat Reed',
+      'Set Design by Josh Steadman',
+      'Properties Design by Rachel Summerhalder',
+      'Lighting Design by Jaron Kent Hermansen',
+      'Costume Design by Nancy Cannon',
+      'Hair & Makeup Design by Samantha Lambson',
+      'Production Photography by Jay Drowns',
+      'BTS Photography by Janice Chan',
     ],
-    '2019',
+    'October 2019',
+    [
+      {
+        link: {
+          label: 'Sweeney Todd: The Demon Barber of Fleet Street at Utah Valley University is Bloody Superb',
+          uri: 'https://frontrowreviewersutah.com/?p=13952',
+        },
+        publication: '(Front Row Reviewers)'
+      },
+      {
+        link: {
+          label: 'Utah Repertory Theater’s SWEENEY TODD Is A Reminder Of What Happens When A Person’s Heart Is Guided Completely By Revenge',
+          uri: 'https://www.broadwayworld.com/salt-lake-city/article/BWW-Review-Utah-Repertory-Theaters-SWEENEY-TODD-Is-A-Reminder-Of-What-Happens-When-A-Persons-Heart-Is-Guided-Completely-By-Revenge-20191029',
+        },
+        publication: '(BroadwayWorld Review)'
+      },
+      {
+        link: {
+          label: 'SWEENEY TODD, a Utah Rep and Noorda Center Co-Production, Wildly Heralded',
+          uri: 'https://www.broadwayworld.com/salt-lake-city/article/BWW-Feature-SWEENEY-TODD-a-Utah-Rep-and-Noorda-Center-Co-Production-Wildly-Heralded-20191115',
+        },
+        publication: '(BroadwayWorld Feature)'
+      },
+      {
+        link: {
+          label: 'Utah Repertory Theater’s Sweeney Todd is a Bloody Good Time',
+          uri: 'https://www.uvureview.com/valley-life/artsculture/utah-repertory-theaters-sweeney-todd-is-a-bloody-good-time/',
+        },
+        publication: '(UVU Review)'
+      },
+    ],
+    [
+      'Book by Hugh Wheeler',
+      'Music & Lyrics by Stephen Sondheim',
+    ],
   ),
   new Gallery(
     GALLERY.URINETOWN,

@@ -23,7 +23,7 @@ const LARAMIE = imageUri('laramie.jpg');
 const MRBURNS = imageUri('mrburns.jpg')
 const TAMINGOFTHESHREW = imageUri('tamingoftheshrew.jpg');
 const URINETOWN = imageUri('urinetown.jpg');
-const SWEENEY = imageUri('sweeney.jpg');
+const SWEENEY = imageUri('sweeneytodd.jpg');
 const CINDERELLA = imageUri('cinderella.jpg');
 const JAMES_AND_THE_GIANT_PEACH = imageUri('jamesandthegiantpeach.jpg');
 
@@ -79,14 +79,24 @@ const CINDERELLA_GALLERY = imageUris([
 ]);
 
 const SWEENEY_GALLERY = imageUris([
-  'sweeney/sweeney1.jpg',
-  'sweeney/sweeney2.jpg',
-  'sweeney/sweeney3.jpg',
-  'sweeney/sweeney4.jpg',
-  'sweeney/sweeney5.jpg',
-  'sweeney/sweeney6.jpg',
-  'sweeney/sweeney7.jpg',
-  'sweeney/sweeney8.jpg',
+  'sweeneytodd/sweeneytodd14.jpg',
+  'sweeneytodd/sweeneytodd9.jpg',
+  'sweeneytodd/sweeneytodd12.jpg',
+  'sweeneytodd/sweeneytodd3.jpg',
+  'sweeneytodd/sweeneytodd10.jpg',
+  'sweeneytodd/sweeneytodd15.jpg',
+  'sweeneytodd/sweeneytodd4.jpg',
+  'sweeneytodd/sweeneytodd11.jpg',
+  'sweeneytodd/sweeneytodd6.jpg',
+  'sweeneytodd/sweeneytodd7.jpg',
+  'sweeneytodd/sweeneytodd8.jpg',
+  'sweeneytodd/sweeneytodd1.jpg',
+  'sweeneytodd/sweeneytodd5.jpg',
+  'sweeneytodd/sweeneytodd2.jpg',
+  'sweeneytodd/sweeneytodd13.jpg',
+  'sweeneytodd/sweeneytodd16.jpg',
+  'sweeneytodd/sweeneytodd17.jpg',
+  'sweeneytodd/sweeneytodd18.jpg',
 ]);
 
 const TAMINGOFTHESHREW_GALLERY = imageUris([

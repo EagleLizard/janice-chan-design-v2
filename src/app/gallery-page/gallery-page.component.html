@@ -3,8 +3,8 @@
   <div 
     class="gallery-detail"
     *ngIf="gallery && gallery.hasDetail()">
-    <div class="organization">
-      {{ gallery.title.toUpperCase() }}
+    <div class="gallery-title">
+      {{ gallery.title }}
     </div>
     <div
       class="original-credits"
@@ -29,12 +29,9 @@
       <div class="footer-year">
         {{ gallery.year }}
       </div>
-      <div class="footer-location">
-        {{ gallery.location }}
-      </div>
     </div>
     <div class="organization">
-      <div class="gallery-title">
+      <div class="organization-title">
         {{ gallery.organization }}
       </div>
     </div>
@@ -53,19 +50,22 @@
             *ngIf="mediaItem.description">
             {{ mediaItem.description }}
           </div>
+          <span *ngIf="mediaItem.description && mediaItem.link">
+            &nbsp;
+          </span>
           <div class="media-source">
             <div
               class="media-item-link"
               *ngIf="mediaItem.link">
-              &nbsp;
               <a
                 href="{{mediaItem.link.uri}}"
                 target="_blank">
                 {{ mediaItem.link.label }}
               </a>
             </div>
+            &nbsp;
             <div class="media-item-publication">
-              &nbsp;{{ mediaItem.publication }}
+              {{ mediaItem.publication }}
             </div>
           </div>
         </div>
