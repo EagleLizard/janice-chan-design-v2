@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import imageUris from 'src/app/shared/image-uris';
 import { NavService, LINKS } from '../shared/nav.service';
 
-const LOGO_BASE_WIDTH = 1500;
+const LOGO_BASE_WIDTH = 500;
 
 @Component({
   selector: 'jc-nav',
