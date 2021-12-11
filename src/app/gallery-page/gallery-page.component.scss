@@ -6,11 +6,11 @@
   // BEGIN Media query specific styles
   display: flex;
   .gallery-detail {
-    flex: 2 0;
-    min-width: 405px;
+    flex: 3 1;
+    min-width: 375px;
   }
   .gallery-images {
-    flex: 3 0;
+    flex: 7 0;
   }
   @include phone {
     flex-direction: column;
@@ -41,23 +41,27 @@
       max-width: 100%;
     }
 
-    .organization{
-      font-size: $font-lg;
+    .original-credits {
+      padding-top: 10px;
       @include phone {
-        font-size: $font-xmd;
+        padding-top: 2px;
       }
-      .gallery-title{
+      .original-credit {
         font-size: $font-sm;
+        padding-top: 5px;
         @include phone {
-          font-size: $font-xs;
+          font-size: $font-xxs;
+          padding-top: 2px;
         }
       }
     }
 
     .self-credit {
       font-size: $font-md;
+      padding-top: 18px;
       @include phone {
         font-size: $font-sm;
+        padding-top: 5px;
       }
     }
     .extra-credit {
@@ -74,6 +78,20 @@
         }
       }
     }
+
+    .organization{
+      font-size: $font-lg;
+      @include phone {
+        font-size: $font-xmd;
+      }
+      .gallery-title{
+        font-size: $font-md;
+        @include phone {
+          font-size: $font-sm;
+        }
+      }
+    }
+
     .detail-footer{
       font-size: $font-md;
       padding-top: 40px;
@@ -82,6 +100,38 @@
         padding-top: 15px;
       }
     }
+
+    .media-and-press {
+      padding-top: 40px;
+      @include phone {
+        padding-top: 15px;
+      }
+      .media-and-press-heading {
+        font-size: $font-md;
+        @include phone {
+          font-size: $font-sm;
+        }
+      }
+      .media-items {
+        padding-top: 10px;
+        @include phone {
+          padding-top: 2px;
+        }
+        .media-item {
+          .media-item-description,
+          .media-item-link,
+          .media-item-publication {
+            padding-top: 5px;
+            font-size: $font-sm;
+            @include phone {
+              padding-top: 2px;
+              font-size: $font-xxs;
+            }
+          }
+        }
+      }
+    }
+
   }
 
   .gallery-image, .gallery-detail{
@@ -111,11 +161,15 @@
 
   .gallery-detail {
     box-sizing: border-box;
+
+    .self-credit {
+      text-transform: uppercase;
+    }
+
     .organization{
       display: inline-block;
-
       .gallery-title {
-        font-style: italic;
+        // font-style: italic;
         text-align: left;
       }
     }
@@ -125,6 +179,26 @@
       justify-content: space-between;
       .footer-location{
         padding-left: 15px;
+      }
+    }
+
+    .media-and-press {
+      display: inline-block;
+      .media-and-press-heading {
+        text-transform: uppercase;
+      }
+      .media-items {
+        .media-item {
+          .media-source {
+            .media-item-link {
+              display: inline;
+            }
+            .media-item-publication {
+              padding-left: 5px;
+              display: inline;
+            }
+          }
+        }
       }
     }
   }

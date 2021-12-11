@@ -1,32 +1,70 @@
 <div class="gallery-page page">
-  
-  <div class="gallery-header">
-  
-    <div 
-      class="gallery-detail"
-      *ngIf="gallery && gallery.hasDetail()">
-      <div class="organization">
-        {{ gallery.title.toUpperCase() }}
-        <div class="gallery-title">
-            {{ gallery.organization }}
-        </div>
+
+  <div 
+    class="gallery-detail"
+    *ngIf="gallery && gallery.hasDetail()">
+    <div class="organization">
+      {{ gallery.title.toUpperCase() }}
+    </div>
+    <div
+      class="original-credits"
+      *ngIf="gallery.hasOriginalCredits()">
+      <div
+        class="original-credit"
+        *ngFor="let originalCredit of gallery.originalCredits;">
+        {{ originalCredit }}
       </div>
-      <div class="self-credit">
-        {{ gallery.credit }}
+    </div>
+    <div class="self-credit">
+      {{ gallery.credit }}
+    </div>
+    <div class="extra-credit">
+      <div 
+        class="extra-credit-item"
+        *ngFor="let extraCredit of gallery.description;">
+        {{ extraCredit }}
       </div>
-      <div class="extra-credit">
-        <div 
-          class="extra-credit-item"
-          *ngFor="let extraCredit of gallery.description;">
-          {{ extraCredit }}
-        </div>
+    </div>
+    <div class="detail-footer">
+      <div class="footer-year">
+        {{ gallery.year }}
       </div>
-      <div class="detail-footer">
-        <div class="footer-year">
-          {{ gallery.year }}
-        </div>
-        <div class="footer-location">
-          {{ gallery.location }}
+      <div class="footer-location">
+        {{ gallery.location }}
+      </div>
+    </div>
+    <div class="organization">
+      <div class="gallery-title">
+        {{ gallery.organization }}
+      </div>
+    </div>
+    <div
+      class="media-and-press"
+      *ngIf="gallery.hasMedia()">
+      <div class="media-and-press-heading">
+        Media & Press
+      </div>
+      <div class="media-items">
+        <div
+          class="media-item"
+          *ngFor="let mediaItem of gallery.mediaAndPress;">
+          <div
+            class="media-item-description"
+            *ngIf="mediaItem.description">
+            {{ mediaItem.description }}
+          </div>
+          <div class="media-source">
+            <div
+              class="media-item-link"
+              *ngIf="mediaItem.link">
+              <a href="{{mediaItem.link.uri}}">
+                {{ mediaItem.link.label }}
+              </a>
+            </div>
+            <div class="media-item-publication">
+              {{ mediaItem.publication }}
+            </div>
+          </div>
         </div>
       </div>
     </div>

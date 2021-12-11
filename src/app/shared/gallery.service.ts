@@ -16,14 +16,27 @@ const GALLERY_PAGES: Gallery[] = [
     [
       'Directed by Dr. Lisa Hall',
       'Choreography by Chantelle Wells',
-      'Technical Direction by Cristian Bell',
+      'Technical Direction by Cristian Bell & Glenn Pepe',
       'Lighting Design by Colin Skip Wilson',
       'Costume Design by Dayna Kay Gomar',
       'Hair & Makeup Design by Kate Backman',
       'Production Photography by Suzy Oliveira',
     ],
     'November 2021',
-    'Location: Orem, Utah, U.S.A.',
+    [
+      {
+        description: '“The set and costume design created a mesmerizing and immersive atmosphere. It had a cutout of the titular peach artfully inlaid with flowers which acted as the center of the production, but there were further elements with clouds above and the city skyline in the background which gave it a sense of depth and variety.”',
+        link: {
+          label: '"James and the Giant Peach” - A Fun, Whimsical Story About Finding One’s Home',
+          uri: 'https://www.uvureview.com/valley-life/artsculture/james-and-the-giant-peach-a-fun-whimsical-story-about-finding-ones-home/',
+        },
+        publication: '(UVU Review)',
+      },
+    ],
+    [
+      'Book by Timothy Allen McDonald',
+      'Music & Lyrics by Benj Pasek & Justin Paul',
+    ],
   ),
   new Gallery(
     GALLERY.CINDERELLA,
@@ -39,7 +52,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Suzy Oliveira',
     ],
     '2021',
-    'Location: Orem, Utah, U.S.A.',
   ),
   new Gallery(
     GALLERY.SWEENEY,
@@ -59,7 +71,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Janice Chan',
     ],
     '2019',
-    'Location: Orem, Utah, U.S.A.',
   ),
   new Gallery(
     GALLERY.URINETOWN,
@@ -79,7 +90,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Jeremy Hall',
     ],
     '2019',
-    'Location: Orem, Utah, U.S.A.',
   ),
   new Gallery(
     GALLERY.TAMINGOFTHESHREW,
@@ -97,7 +107,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Shelby Gist, Janice Chan',
     ],
     '2019',
-    'Location: Orem, Utah, U.S.A.',
   ),
   new Gallery(
     GALLERY.MRBURNS,
@@ -115,7 +124,6 @@ const GALLERY_PAGES: Gallery[] = [
 
     ],
     '2019',
-    'Location: Provo, Utah, U.S.A.',
   ),
   new Gallery(
     GALLERY.LARAMIE,
@@ -134,7 +142,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Suzy Oliveira',
     ],
     '2019',
-    'Location: Orem, Utah, U.S.A.',
   ),
   new Gallery(
     GALLERY.THE_DRAG,
@@ -153,7 +160,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Laura Chapman',
     ],
     '2018',
-    'Location: Provo, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.CABARET,
@@ -173,7 +179,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Jeremy Hall',
     ],
     '2018',
-    'Location: Orem, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.NEXT_FALL,
@@ -190,7 +195,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Laura Chapman',
     ],
     '2018',
-    'Location: Provo, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.AGAMEMNON,
@@ -208,7 +212,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Deric Lambdin',
     ],
     '2018',
-    'Orem, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.TRIBES,
@@ -225,7 +228,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Deric Lambdin',
     ],
     '2018',
-    'Orem, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.FAT_PIG,
@@ -242,7 +244,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Laura Chapman',
     ],
     '2018',
-    'Provo, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.UVU,
@@ -261,7 +262,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Great Projects Photography',
     ],
     '2017',
-    'Orem, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.SUNDANCE,
@@ -278,7 +278,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Costumes: Nancy Cannon, Carla Summers'
     ],
     '2017',
-    'Sundance, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.RENAISSANCE_NOW,
@@ -294,7 +293,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Bruce Miller, Janice Chan',
     ],
     '2017',
-    'Provo, Utah, U.S.A.',
   ),
   new Gallery(
     GALLERY.BYU,
@@ -311,7 +309,6 @@ const GALLERY_PAGES: Gallery[] = [
       'Photos: Matthew Kupferer',
     ],
     '2017',
-    'Provo, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.RENAISSANCE_FAIRE,
@@ -324,7 +321,6 @@ const GALLERY_PAGES: Gallery[] = [
       
     ],
     '2017, 2018',
-    'Lehi, Utah, U.S.A.'
   ),
   new Gallery(
     GALLERY.ART,
@@ -334,7 +330,6 @@ const GALLERY_PAGES: Gallery[] = [
     '',
     '',
     [],
-    '',
     '',
   )
 ];

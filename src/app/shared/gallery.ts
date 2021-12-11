@@ -2,7 +2,14 @@ import GALLERY from './gallery-enum';
 import GalleryImage from './gallery-image';
 import { LightboxImage } from './lightbox-image';
 
-
+export interface MediaAndPressDetail {
+  description?: string;
+  link?: {
+    label: string;
+    uri: string;
+  };
+  publication: string;
+}
 
 export default class Gallery {
   galleryKey: GALLERY;
@@ -14,7 +21,9 @@ export default class Gallery {
   credit: string;
   description: string[];
   year: string;
-  location: string;
+  mediaAndPress: MediaAndPressDetail[];
+  originalCredits: string[];
+
   constructor(
     galleryKey: GALLERY,
     galleryUris: string[],
@@ -24,7 +33,8 @@ export default class Gallery {
     credit: string,
     description: string[],
     year: string,
-    location: string,
+    mediaAndPress?: MediaAndPressDetail[],
+    originalCredits?: string[],
   ){
     this.galleryKey = galleryKey;
     this.galleryUris = galleryUris;
@@ -34,8 +44,8 @@ export default class Gallery {
     this.credit = credit;
     this.description = description;
     this.year = year;
-    // this.location = location;
-    this.location = '';
+    this.mediaAndPress = mediaAndPress ?? [];
+    this.originalCredits = originalCredits ?? [];
   }
 
   setImage(image: GalleryImage){
@@ -60,7 +70,15 @@ export default class Gallery {
       || this.credit.length
       || this.description.length
       || this.year.length
-      || this.location.length;
+    ;
+  }
+
+  hasOriginalCredits() {
+    return this.originalCredits.length > 0;
+  }
+
+  hasMedia() {
+    return this.mediaAndPress.length > 0;
   }
 
 }
