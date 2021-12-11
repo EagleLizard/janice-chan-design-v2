@@ -7,6 +7,25 @@ import imageUris from 'src/app/shared/image-uris';
 
 const GALLERY_PAGES: Gallery[] = [
   new Gallery(
+    GALLERY.JAMES_AND_THE_GIANT_PEACH,
+    imageUris.JAMES_AND_THE_GIANT_PEACH_GALLERY,
+    'James and the Giant Peach',
+    'james-and-the-giant-peach',
+    'Utah Valley University',
+    'scenic & properties design',
+    [
+      'Directed by Dr. Lisa Hall',
+      'Choreography by Chantelle Wells',
+      'Technical Direction by Cristian Bell',
+      'Lighting Design by Colin Skip Wilson',
+      'Costume Design by Dayna Kay Gomar',
+      'Hair & Makeup Design by Kate Backman',
+      'Production Photography by Suzy Oliveira',
+    ],
+    'November 2021',
+    'Location: Orem, Utah, U.S.A.',
+  ),
+  new Gallery(
     GALLERY.CINDERELLA,
     imageUris.CINDERELLA_GALLERY,
     'Cinderella Eats Rice and Beans',

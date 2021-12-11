@@ -72,6 +72,10 @@ const SCENIC_IMAGES = [
     imageUris.CINDERELLA,
     GALLERY.CINDERELLA,
   ),
+  new GalleryImage(
+    imageUris.JAMES_AND_THE_GIANT_PEACH,
+    GALLERY.JAMES_AND_THE_GIANT_PEACH,
+  ),
 ];
 
 @Injectable({

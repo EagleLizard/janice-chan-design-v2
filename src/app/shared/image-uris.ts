@@ -25,11 +25,12 @@ const TAMINGOFTHESHREW = imageUri('tamingoftheshrew.jpg');
 const URINETOWN = imageUri('urinetown.jpg');
 const SWEENEY = imageUri('sweeney.jpg');
 const CINDERELLA = imageUri('cinderella.jpg');
+const JAMES_AND_THE_GIANT_PEACH = imageUri('jamesandthegiantpeach.jpg');
 
 const ART_GALLERY = imageUris([
   'art/art1.png',
   'art/art2.png',
-  'art/art3.png',
+  'art/art3.png',   
   'art/art4.png',
   'art/art5.jpg',
   'art/art6.jpg',
@@ -48,6 +49,23 @@ const ART_GALLERY = imageUris([
   'renaissancefaire/renaissancefaire19_1.jpg',
   'renaissancefaire/renaissancefaire19_2.jpg',
   'renaissancefaire/renaissancefaire19_3.jpg',
+]);
+
+const JAMES_AND_THE_GIANT_PEACH_GALLERY = imageUris([
+  'jamesandthegiantpeach/jamesandthegiantpeach1.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach2.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach3.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach4.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach5.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach6.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach7.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach8.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach9.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach10.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach11.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach12.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach13.jpg',
+  'jamesandthegiantpeach/jamesandthegiantpeach14.jpg',
 ]);
 
 const CINDERELLA_GALLERY = imageUris([
@@ -315,6 +333,7 @@ export default <any> {
   URINETOWN,
   SWEENEY,
   CINDERELLA,
+  JAMES_AND_THE_GIANT_PEACH,
 
   TRIBES_GALLERY,
   FAT_PIG_GALLERY,
@@ -334,6 +353,7 @@ export default <any> {
   TAMINGOFTHESHREW_GALLERY,
   SWEENEY_GALLERY,
   CINDERELLA_GALLERY,
+  JAMES_AND_THE_GIANT_PEACH_GALLERY,
 };
 
 function imageUri(fileKey: string) {

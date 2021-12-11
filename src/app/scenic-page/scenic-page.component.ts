@@ -5,6 +5,7 @@ import { GalleryService } from '../shared/gallery.service';
 import GALLERY from '../shared/gallery-enum';
 
 const SCENIC_GALLERIES = [
+  GALLERY.JAMES_AND_THE_GIANT_PEACH,
   GALLERY.CINDERELLA,
   GALLERY.SWEENEY,
   GALLERY.URINETOWN,
