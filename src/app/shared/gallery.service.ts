@@ -44,14 +44,20 @@ const GALLERY_PAGES: Gallery[] = [
     'Cinderella Eats Rice and Beans',
     'cinderella',
     'Utah Valley University',
-    'scenic and props designer',
+    'scenic & properties design',
     [
-      'Director: Megan Ann Rasmussen',
-      'Costumes: Michelle Walling',
-      'Hair & Makeup: Kiyomi Coronado',
-      'Photos: Suzy Oliveira',
+      'Directed by Megan Ann Rasmussen',
+      'Technical Direction by Glenn Pepe',
+      'Costume Design by Michelle Walling',
+      'Hair & Makeup Design by Kiyomi Coronado',
+      'Production Photography by Suzy Oliveira',
     ],
-    '2021',
+    'February 2021',
+    [],
+    [
+      'Book and Lyrics by Karen Zacarías',
+      'Music by Deborah Wicks La Puma',
+    ]
   ),
   new Gallery(
     GALLERY.SWEENEY,
@@ -145,16 +151,28 @@ const GALLERY_PAGES: Gallery[] = [
     'Taming Of The Shrew',
     'taming-of-the-shrew',
     'Utah Valley University',
-    'scenic & props designer',
+    'scenic & properties design',
     [
-      'Director: Shelby Gist',
-      'Lights: Emma Belnap',
-      'Sound: Hayley Christensen',
-      'Costumes: Danae Devey',
-      'Makeup & Hair: Alanna Cottam',
-      'Photos: Shelby Gist, Janice Chan',
+      'Directed by Shelby Gist',
+      'Lighting Design by Emma Belnap',
+      'Costume Design by Danae Devey',
+      'Hair & Makeup Design by Alanna Cottam',
+      'Production Photography by Shelby Gist & Janice Chan',
     ],
-    '2019',
+    'May 2019',
+    [
+      {
+        link: {
+          label: 'UVU \'Taming of the Shrew\' Shines Light on Domestic Violence',
+          uri: 'https://www.heraldextra.com/entertainment/2019/may/23/uvu-taming-of-the-shrew-shines-light-on-domestic-violence/',
+        },
+        publication: '(Daily Herald)',
+      }
+    ],
+    [
+      'Written by William Shakespeare',
+      'Adapted by Chelsea Hickman',
+    ]
   ),
   new Gallery(
     GALLERY.MRBURNS,
@@ -162,16 +180,28 @@ const GALLERY_PAGES: Gallery[] = [
     'Mr. Burns, a Post-Electric Play',
     'mr-burns',
     'An Other Theater Company',
-    'scenic designer, props designer, muralist',
+    'scenic & properties design',
     [
-      'Directors: Kacey Spadafora, Taylor Jack Nelson',
-      'Lights: Emma Belnap',
-      'Sound: Kaecy Spadafora',
-      'Costumes: Janae Lefleur',
-      'Photos: Laura Chapman, Janice Chan',
-
+      'Directed by Kacey Spadafora & Taylor Jack Nelson',
+      'Scenic Painting by Janice Chan',
+      'Lighting Design by Emma Belnap',
+      'Costume Design by: Janae Lefleur',
+      'Production Photography by Laura Chapman & Janice Chan',
     ],
-    '2019',
+    'July 2019',
+    [
+      {
+        description: '“Janice Chan\'s set and prop design feel perfectly tuned to the bare-bones theatrical group with a splash of the cartoon humor that the story draws its inspiration from.”',
+        link: {
+          label: 'An Other Theater Company\'s Mr. Burns, A Post Electric Play in Provo is Funny, Sobering, Thought-Provoking, and Utterly Multifariously Unique”',
+          uri: 'https://frontrowreviewersutah.com/?p=12791',
+        },
+        publication: '(Front Row Reviewers)',
+      },
+    ],
+    [
+      'Written by Anne Washburn',
+    ],
   ),
   new Gallery(
     GALLERY.LARAMIE,
@@ -179,17 +209,38 @@ const GALLERY_PAGES: Gallery[] = [
     'The Laramie Project',
     'the-laramie-project',
     'Utah Valley University',
-    'scenic & props designer',
+    'scenic & properties design',
     [
-      'Director: Laurie Harrop-Purser',
-      'Lights: Colin Skip Wilson',
-      'Projections: Emma Belnap',
-      'Sound: Nathan Lowry',
-      'Costumes: Rae Sip & Kate Backman',
-      'Makeup: Alanna Cottam',
-      'Photos: Suzy Oliveira',
+      'Directed by Laurie Harrop-Purser',
+      'Technical Direction by Cristian Bell',
+      'Lighting Design by Colin Skip Wilson',
+      'Projections Design by Emma Belnap',
+      'Costume Design by Rae Sip & Kate Backman',
+      'Hair & Makeup Design by Alanna Cottam',
+      'Production Photos by Suzy Oliveira',
     ],
-    '2019',
+    'January 2019',
+    [
+      {
+        description: '“Set designer Janice Chan orchestrated this in a way that seemingly transported the audience to another place.”',
+        link: {
+          label: '\'Laramie Project\' Asks Audiences to Examine Relationship to LGBT Community',
+          uri: 'https://www.uvureview.com/news/front-page/recent/review-laramie-project-asks-audiences-to-examine-relationship-to-lgbtq-community/',
+        },
+        publication: '(UVU Review)',
+      },
+      {
+        link: {
+          label: 'UVU Play About Matthew Shepard Highlights Utah\'s Lack of Hate Crime Protections for LGBTQ',
+          uri: 'https://www.abc4.com/news/local-news/uvu-play-about-matthew-shepard-highlights-utahs-lack-of-hate-crime-protections-for-lgbtq/',
+        },
+        publication: '(ABC4 News)',
+      },
+    ],
+    [
+      'Written by Moisés Kaufman',
+      '& the members of the Tectonic Theater Project',
+    ],
   ),
   new Gallery(
     GALLERY.THE_DRAG,
@@ -197,17 +248,29 @@ const GALLERY_PAGES: Gallery[] = [
     'The Drag',
     'the-drag',
     'An Other Theater Company',
-    'scenic & props designer, muralist',
+    'scenic & properties design',
     [
-      'Director: Taylor Jack Nelson',
-      'Assistant Muralist: Tyler Whited',
-      'Lights: Aimee Findley Moore',
-      'Sound: Kacey Spadafora',
-      'Costumes: Ash Knowles',
-      'Makeup: Christopher-Alan Pederson',
-      'Photos: Laura Chapman',
+      'Directed by Taylor Jack Nelson',
+      'Scenic Painting by Janice Chan & Tyler Whited',
+      'Lighting Design by Aimee Findley Moore',
+      'Costume Design by Ash Knowles',
+      'Hair & Makeup Design by Christopher-Alan Pederson',
+      'Production Photography by Laura Chapman',
     ],
-    '2018',
+    'July 2018',
+    [
+      {
+        description: '“Janice Chan\'s set and props create the perfect atmosphere for a jazz-age romp.”',
+        link: {
+          label: 'Is that The Drag at An Other Theater Company in Provo, or Are You Just Happy to See Me?',
+          uri: 'https://frontrowreviewersutah.com/?p=8462',
+        },
+        publication: '(Front Row Reviewers)',
+      },
+    ],
+    [
+      'Written by Mae West',
+    ],
   ),
   new Gallery(
     GALLERY.CABARET,
@@ -215,18 +278,39 @@ const GALLERY_PAGES: Gallery[] = [
     'Cabaret',
     'cabaret',
     'Utah Valley University',
-    'assistant scenic & props designer',
+    'assistant scenic & properties design',
     [
-      'Director: Robert Moffat',
-      'Scenic: Madeline Ashton',
-      'Props: Madeline Ashton',
-      'Lights: Emma Belnap',
-      'Sound: Gavin Henry',
-      'Costumes: Carolyn Urban',
-      'Makeup: Shelby Gist',
-      'Photos: Jeremy Hall',
+      'Directed by Robert Moffat',
+      'Technical Direction by Cristian Bell',
+      'Scenic Design by Madeline Ashton',
+      'Properties Design by Madeline Ashton',
+      'Lighting Design by Emma Belnap',
+      'Costume Design by Carolyn Urban',
+      'Hair & Makeup Design by Shelby Gist',
+      'Production Photography by Jeremy Hall',
     ],
-    '2018',
+    'April 2018',
+    [
+      {
+        link: {
+          label: 'CABARET Scintillates at Utah Valley University',
+          uri: 'https://www.broadwayworld.com/salt-lake-city/article/BWW-Review-CABARET-Scintillates-at-Utah-Valley-University-20180416',
+        },
+        publication: '(BroadwayWorld Review)'
+      },
+      {
+        link: {
+          label: 'Cabaret at UVU Shows the Genuine Behind the Decadence',
+          uri: 'https://frontrowreviewersutah.com/?p=7363',
+        },
+        publication: '(Front Row Reviewers)'
+      },
+    ],
+    [
+      'Book by Joe Masteroff',
+      'Music by John Kander',
+      'Lyrics by Fred Ebb ',
+    ],
   ),
   new Gallery(
     GALLERY.NEXT_FALL,
@@ -234,15 +318,28 @@ const GALLERY_PAGES: Gallery[] = [
     'Next Fall',
     'next-fall',
     'An Other Theater Company',
-    'scenic designer, props designer',
+    'scenic & properties design',
     [
-      'Director: Kacey Spadafora',
-      'Lights: Paige Porter',
-      'Sound: Kaecy Spadafora',
-      'Costumes: Ash Knowles',
-      'Photos: Laura Chapman',
+      'Directed by Kacey Spadafora',
+      'Scenic Painting by Janice Chan & Cynthia Chan',
+      'Lighting Design by Paige Porter',
+      'Costume Design by Ash Knowles',
+      'Production Photography by Laura Chapman',
     ],
-    '2018',
+    'May 2018',
+    [
+      {
+        description: '“Janice Chan’s set design is also simple, but beautiful. Various locations are specified by changing the paintings on the wall and rearranging the furniture. Large geometric patterns in rich colors cover the back wall, creating a pleasing backdrop for the action.”',
+        link: {
+          label: 'Humor and Heartbreak in An Other Theater Company\'s Next Fall',
+          uri: 'https://frontrowreviewersutah.com/?p=7596',
+        },
+        publication: '(Front Row Reviewers)',
+      }
+    ],
+    [
+      'Written by Geoffrey Nauffts',
+    ],
   ),
   new Gallery(
     GALLERY.AGAMEMNON,
@@ -250,16 +347,19 @@ const GALLERY_PAGES: Gallery[] = [
     'Agamemnon',
     'agamemnon',
     'Utah Valley University',
-    'scenic designer',
+    'scenic design',
     [
-      'Director: Christopher Clark',
-      'Props: Aimee Moore',
-      'Lights: Aaron Gubler',
-      'Sound: Colin Skip Wilson',
-      'Costumes: Mallory Goodman',
-      'Photos: Deric Lambdin',
+      'Directed by Christopher Clark',
+      'Properties Design by Aimee Moore',
+      'Lighting Design by Aaron Gubler',
+      'Costume Design by Mallory Goodman',
+      'Production Photography by Deric Lambdin',
     ],
-    '2018',
+    'April 2018',
+    [],
+    [
+      'Written by Aeschylus',
+    ]
   ),
   new Gallery(
     GALLERY.TRIBES,
@@ -267,15 +367,19 @@ const GALLERY_PAGES: Gallery[] = [
     'Tribes',
     'tribes',
     'Utah Valley University',
-    'scenic designer',
+    'scenic design',
     [
-      'Director: Hayley Lambdin',
-      'Lights: Aaron Gubler',
-      'Sound: Gavin Henry',
-      'Costumes: Molly Pack',
-      'Photos: Deric Lambdin',
+      'Directed by Hayley Lambdin',
+      'Properties Design by McKenzie Kiser',
+      'Lighting Design by Aaron Gubler',
+      'Costume Design by Molly Pack',
+      'Production Photography by Deric Lambdin',
     ],
-    '2018',
+    'January 2018',
+    [],
+    [
+      'Written by Nina Raine',
+    ]
   ),
   new Gallery(
     GALLERY.FAT_PIG,
@@ -283,33 +387,49 @@ const GALLERY_PAGES: Gallery[] = [
     'Fat Pig',
     'fat-pig',
     'An Other Theater Company',
-    'scenic designer',
+    'scenic & properties design',
     [
-      'Director: Morag Shepherd',
-      'Lights: Paige Porter',
-      'Sound: Paige Porter',
-      'Costumes: Chris Lancaster',
-      'Photos: Laura Chapman',
+      'Directed by Morag Shepherd',
+      'Lighting Design by Paige Porter',
+      'Costume Design by Chris Lancaster',
+      'Production Photography by Laura Chapman',
     ],
-    '2018',
+    'January 2018',
+    [
+      {
+        link: {
+          label: 'Come Eat (and Face) Your Feelings at An Other Theater Company\'s Fat Pig',
+          uri: 'https://frontrowreviewersutah.com/?p=6118'
+        },
+        publication: '(Front Row Reviewers)'
+      }
+    ],
+    [
+      'Written by Neil Labute',
+    ]
   ),
   new Gallery(
     GALLERY.UVU,
     imageUris.UVU_GALLERY,
-    'A Year with Frog & Toad',
+    'A Year with Frog and Toad',
     'a-year-with-frog-and-toad',
     'Utah Valley University',
-    'assistant scenic designer',
+    'assistant scenic design',
     [
-      'Director: Lisa Hall Hagen',
-      'Scenic: Emma Belnap',
-      'Props: Alicia Freeman',
-      'Lights: Aaron Gubler',
-      'Sound: Kevin Criman',
-      'Costumes: Chris Lancaster',
-      'Photos: Great Projects Photography',
+      'Directed by Dr. Lisa Hall',
+      'Technical Direction by Cristian Bell',
+      'Scenic Design by Emma Belnap',
+      'Properties Design by Alicia Freeman',
+      'Lighting Design by Aaron Gubler',
+      'Costume Design by Chris Lancaster',
+      'Production Photography by Jeremy Hall',
     ],
-    '2017',
+    'November 2017',
+    [],
+    [
+      'Book by Willie Reale',
+      'Music & Lyrics by Robert Reale & Willie Reale',
+    ]
   ),
   new Gallery(
     GALLERY.SUNDANCE,
@@ -317,15 +437,30 @@ const GALLERY_PAGES: Gallery[] = [
     'Joseph and the Amazing Technicolor Dreamcoat',
     'joseph-and-the-amazing-technicolor-dreamcoat',
     'Sundance Summer Theatre',
-    'scenic painter',
+    'scenic painting',
     [
-      'Director: D. Terry Petrie',
-      'Scenic: Stephen Purdy',
-      'Lights: Matthew Taylor',
-      'Sound: Matthew Kupferer',
-      'Costumes: Nancy Cannon, Carla Summers'
+      'Directed by D. Terry Petrie',
+      'Technical Direction by Cristian Bell',
+      'Scenic Design by Stephen Purdy',
+      'Properties Design by McKenzie Kiser',
+      'Lighting Design by: Matthew Taylor',
+      'Costume Design by Nancy Cannon & Carla Summers',
+      'BTS Photography by Janice Chan',
     ],
-    '2017',
+    'July 2017',
+    [
+      {
+        link: {
+          label: 'Live Drama in Robert Redford\'s Backyard',
+          uri: 'https://www.parkcitymag.com/arts-and-culture/2017/06/live-drama-in-robert-redfords-backyard',
+        },
+        publication: '(Park City Magazine)',
+      },
+    ],
+    [
+      'Music by Andrew Lloyd Webber',
+      'Lyrics by Tim Rice',
+    ],
   ),
   new Gallery(
     GALLERY.RENAISSANCE_NOW,

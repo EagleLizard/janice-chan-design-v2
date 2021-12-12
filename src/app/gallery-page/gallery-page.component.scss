@@ -54,7 +54,7 @@
         padding-top: 2px;
       }
       .original-credit {
-        font-size: $font-sm;
+        font-size: $font-xs;
         padding-top: 5px;
         @include phone {
           font-size: $font-xxs;
@@ -121,6 +121,10 @@
           padding-top: 2px;
         }
         .media-item {
+          padding-top: 10px;
+          @include phone {
+            padding-top: 5px;
+          }
           .media-item-description,
           .media-item-link,
           .media-item-publication {

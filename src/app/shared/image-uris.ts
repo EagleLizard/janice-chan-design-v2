@@ -279,11 +279,11 @@ const SUNDANCE_GALLERY = imageUris([
   'sundance/sundance2.jpg',
   'sundance/sundance3.jpg',
   'sundance/sundance4.jpg',
-  'sundance/sundance5.jpg',
   'sundance/sundance6.jpg',
   'sundance/sundance7.jpg',
   'sundance/sundance8.jpg',
   'sundance/sundance9.jpg',
+  'sundance/sundance5.jpg',
   'sundance/sundance10.jpg',
   'sundance/sundance11.jpg',
 ]);
