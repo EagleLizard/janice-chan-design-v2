@@ -443,7 +443,7 @@ const GALLERY_PAGES: Gallery[] = [
       'Technical Direction by Cristian Bell',
       'Scenic Design by Stephen Purdy',
       'Properties Design by McKenzie Kiser',
-      'Lighting Design by: Matthew Taylor',
+      'Lighting Design by Matthew Taylor',
       'Costume Design by Nancy Cannon & Carla Summers',
       'BTS Photography by Janice Chan',
     ],
