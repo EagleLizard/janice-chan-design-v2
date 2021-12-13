@@ -1,29 +1,32 @@
 
 <div class="about-page page">
   <div class="bio-container">
-    <div class="name">
-      {{info.name}}
-    </div>
-    <div class="bio">
-      <span>
-        {{info.bio}}
-      </span>
-      <span class="instagram">
+    <div class="bio-info">
+      <div class="name">
+        {{info.name}}
+      </div>
+      <div class="bio">
         <span>
-          {{info.instagram.igPrefix}}&nbsp;
+          {{info.bio}}
         </span>
-        <span>
-          <a href="{{info.instagram.url}}">
-            {{info.instagram.userName}}
-          </a>
+        <span class="instagram">
+          <span>
+            {{info.instagram.igPrefix}}&nbsp;
+          </span>
+          <span>
+            <a href="{{info.instagram.url}}">
+              {{info.instagram.userName}}
+            </a>
+          </span>
         </span>
-      </span>
+      </div>
+      <div class="bio">
+        <em>
+          {{info.bioLine2}}
+        </em>
+      </div>
     </div>
-    <div class="bio">
-      <em>
-        {{info.bioLine2}}
-      </em>
-    </div>
+
     <div class="bio-image">
       <img src="{{bioImage}}">
     </div>
@@ -35,9 +38,6 @@
     <div
       class="history-section"
       *ngFor="let section of info.history.sections;">
-      <!-- <div class="history-title">
-        {{section.title}}
-      </div> -->
       <div 
         class="section-projects"
         *ngFor="let project of section.projects;">

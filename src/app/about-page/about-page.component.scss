@@ -3,27 +3,39 @@
 
 .about-page{
   display: flex;
+  @include screenSizeSmall {
+    flex-direction: column;
+  }
 
   .bio-container {
     flex: 3 0;
     padding-right: 2vw;
-    font-size: 16px;
-    // min-width: 30vw;
-    @include smallscreen {
-      min-width: 50vw;
-    }
-    .name {
-      font-size: $font-xlg;
-      font-weight: 700;
-      padding-bottom: 10px;
-    }
-  
-    .bio {
-      padding-bottom: 5px;
-    }
+    .bio-info {
+      @include screenSizeMedium {
+        min-width: 50vw;
+      }
+      @include phone {
+        font-size: $font-xxs;
+      }
 
-    .instagram a {
-      color: inherit;
+      .name {
+        font-size: $font-xlg;
+        font-weight: 700;
+        padding-bottom: 10px;
+        @include phone {
+          font-size: $font-lg;
+          padding-bottom: 5px;
+          padding-top: 5px;
+        }
+      }
+    
+      .bio {
+        padding-bottom: 5px;
+      }
+  
+      .instagram a {
+        color: inherit;
+      }
     }
 
     .bio-image {
@@ -31,30 +43,52 @@
       img {
         max-width: 100%;
       }
+
+      @include screenSizeSmall {
+        text-align: center;
+      }
     }
   }
 
   .history {
     flex: 7 1;
-    // width: 60vw;
+    
     .history-title {
       font-size: $font-md;
       padding: 10px 0;
       font-weight: 500;
-    }
-    .section-projects{
-      display: flex;
-      padding-bottom: 5px;
-      .project-title, .project-org {
-        font-size: $font-xs;
+
+      @include phone {
+        font-size: $font-sm;
       }
+    }
+
+    .section-projects{
+      padding-bottom: 8px;
+
+      @include phone {
+        padding-bottom: 4px;
+      }
+
+      .project-title, .project-org {
+        display: inline;
+        font-size: $font-xs;
+
+        @include screenSizeMedium {
+          font-size: inherit;
+        }
+        @include phone {
+          font-size: $font-xxs;
+        }
+      }
+
       .project-title {
         font-style: italic;
       }
+
       .project-org{
         padding-left: 10px;
       }
     }
-
   }
 }

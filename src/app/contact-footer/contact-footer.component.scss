@@ -1,27 +1,53 @@
 
 @import 'src/app/global.scss';
 
+@mixin smallScreenFooterWrap {
+  @media only screen and (max-width: 650px) {
+    @content;
+  }
+}
+
 .contact-footer {
-  @include jc-toolbar{
+  @include jc-toolbar {
     font-weight: 100;
     height: auto;
     padding: 10px;
     .mat-toolbar-row{
       height: auto;
     }
-    .jc-toolbar-row {
-      font-size: $font-xs;
-      box-sizing: border-box;
-      text-align: center;
+    .jc-footer {
+      display: flex;
       width: 100%;
-      &.jc-copyright {
-        text-align: left;
+      @include smallScreenFooterWrap {
+        flex-direction: column;
       }
-      &.jc-contact {
-        & > a {
-          color: inherit;
+      .jc-toolbar-row {
+        flex: 1 1;
+        font-size: $font-xs;
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+        @include smallScreenFooterWrap {
+          font-size: $font-xxs;
+          line-height: 20px;
         }
-        text-align: right;
+
+        &.jc-copyright {
+          text-align: left;
+          @include smallScreenFooterWrap {
+            text-align: center;
+            margin-left: -5px;
+          }
+        }
+        &.jc-contact {
+          & > a {
+            color: inherit;
+          }
+          text-align: right;
+          @include smallScreenFooterWrap {
+            text-align: center;
+          }
+        }
       }
     }
   };
