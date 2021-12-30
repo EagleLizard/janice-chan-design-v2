@@ -1,7 +1,10 @@
 
 const BASEPATH = 'https://eaglelizard-files.herokuapp.com/v2/image/';
+// const BASEPATH = 'https://eaglelizard.wm.r.appspot.com/image/v0/';
 // const BASEPATH = 'http://localhost:4269/image/';
 // const BASEPATH = 'http://localhost:4269/v2/image/';
+// const BASEPATH = 'http://localhost:4369/image/v0/';
+// const BASEPATH = 'http://localhost:4369/image/v1/';
 
 const LOGO = imageUri('JaniceChanLogo2022-min.png');
 const HOME = imageUri('projects-home.png');
@@ -19,7 +22,8 @@ const AGAMEMNON = imageUri('agamemnon.jpg');
 const NEXT_FALL = imageUri('nextfall.jpg');
 const CABARET = imageUri('cabaret.jpg');
 const THE_DRAG = imageUri('thedrag.jpg');
-const LARAMIE = imageUri('laramie.jpg');
+// const LARAMIE = imageUri('laramie.jpg');
+const LARAMIE = imageUri('laramie_min.jpg');
 const MRBURNS = imageUri('mrburns.jpg')
 const TAMINGOFTHESHREW = imageUri('tamingoftheshrew.jpg');
 const URINETOWN = imageUri('urinetown.jpg');
