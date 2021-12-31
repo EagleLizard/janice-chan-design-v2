@@ -1,6 +1,7 @@
 
-const BASEPATH = 'https://eaglelizard-files.herokuapp.com/v2/image/';
+// const BASEPATH = 'https://eaglelizard-files.herokuapp.com/v2/image/';
 // const BASEPATH = 'https://eaglelizard.wm.r.appspot.com/image/v0/';
+const BASEPATH = 'https://eaglelizard.wm.r.appspot.com/image/v1/';
 // const BASEPATH = 'http://localhost:4269/image/';
 // const BASEPATH = 'http://localhost:4269/v2/image/';
 // const BASEPATH = 'http://localhost:4369/image/v0/';

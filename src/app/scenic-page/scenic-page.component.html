@@ -2,7 +2,7 @@
   <div class="page-tile-container" #pageTileContainer>
     <ngx-masonry 
       [options]="masonryOptions"
-      [useImagesLoaded]="true">
+      [ordered]="true">
       <ngxMasonryItem 
         *ngFor="let gallery of galleries;" 
         class="masonry-item">

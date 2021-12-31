@@ -76,7 +76,7 @@
   <div class="gallery-images">
     <ngx-masonry
       [options]="masonryOptions"
-      [useImagesLoaded]="true">
+      [ordered]="true">
       <ngxMasonryItem
         *ngFor="let galleryItem of lightboxImages; let idx=index;"
         (click)="openLightbox(idx)"

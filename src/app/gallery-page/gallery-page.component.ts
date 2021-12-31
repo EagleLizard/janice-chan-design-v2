@@ -6,6 +6,7 @@ import GalleryImage from '../shared/gallery-image';
 import { NgxMasonryOptions } from 'ngx-masonry';
 import { Lightbox } from 'ngx-lightbox';
 import { LightboxImage } from '../shared/lightbox-image';
+import { animate, style } from '@angular/animations';
 
 const THUMB_SIZE = 350;
 
@@ -33,7 +34,17 @@ export class GalleryPageComponent implements OnInit {
       resize: true,
       gutter: 20,
       fitWidth: true,
-      columnWidth: THUMB_SIZE
+      columnWidth: THUMB_SIZE,
+      animations: {
+        show: [
+          style({opacity: 0}),
+          animate('300ms ease-in', style({opacity: 1})),
+        ],
+        hide: [
+          style({opacity: '*'}),
+          animate('300ms ease-in', style({opacity: 0})),
+        ]
+      },
     };
     this.route.params.subscribe(params => {
       if(params.gallery){

@@ -5,6 +5,7 @@
     ngx-masonry{
       margin: 0 auto;
       .masonry-item{
+        transition: top 0.4s ease-in-out, left 0.4s ease-in-out;
         margin-bottom: 20px;
         width: 350px;
         img{
