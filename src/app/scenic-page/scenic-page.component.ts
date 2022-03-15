@@ -2,29 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { NgxMasonryOptions } from 'ngx-masonry';
 import Gallery from '../shared/gallery';
 import { GalleryService } from '../shared/gallery.service';
-import GALLERY from '../shared/gallery-enum';
 import { animate, style } from '@angular/animations';
-
-const SCENIC_GALLERIES = [
-  GALLERY.JAMES_AND_THE_GIANT_PEACH,
-  GALLERY.CINDERELLA,
-  GALLERY.SWEENEY,
-  GALLERY.URINETOWN,
-  GALLERY.MRBURNS,
-  GALLERY.LARAMIE,
-  GALLERY.THE_DRAG,
-  GALLERY.NEXT_FALL,
-  GALLERY.AGAMEMNON,
-  GALLERY.TRIBES,
-  GALLERY.FAT_PIG,
-  GALLERY.UVU,
-  GALLERY.SUNDANCE,
-  GALLERY.CABARET,
-  GALLERY.TAMINGOFTHESHREW,
-  // GALLERY.RENAISSANCE_NOW,
-  // GALLERY.BYU,
-  // GALLERY.RENAISSANCE_FAIRE,
-];
+import { JcdService } from '../shared/jcd.service';
+import { JcdProject } from '../shared/jcd-entities';
 
 @Component({
   selector: 'jc-scenic-page',
@@ -34,12 +14,17 @@ const SCENIC_GALLERIES = [
 export class ScenicPageComponent implements OnInit {
   galleries: Gallery[];
   masonryOptions: NgxMasonryOptions;
+  jcdProjects: JcdProject[];
 
   constructor(
-    private galleryService: GalleryService
+    private galleryService: GalleryService,
+    private jcdService: JcdService
   ) { }
 
   ngOnInit() {
+    this.jcdService.getProjects().then(projects => {
+      this.jcdProjects = projects;
+    });
     this.masonryOptions = {
       horizontalOrder: true,
       resize: true,
@@ -57,9 +42,6 @@ export class ScenicPageComponent implements OnInit {
         ]
       },
     };
-    this.galleries = SCENIC_GALLERIES.map(galleryKey => {
-      return this.galleryService.getGallery(galleryKey);
-    });
   }
 
 }

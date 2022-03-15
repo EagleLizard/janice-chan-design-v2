@@ -20,6 +20,7 @@ import { PageTileComponent } from './scenic-page/page-tile/page-tile.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { ContactFooterComponent } from './contact-footer/contact-footer.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const icons = [
   faBars
@@ -46,6 +47,7 @@ const MatComponents = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,

@@ -3,7 +3,8 @@ import {
   OnInit, 
   Input,
 } from '@angular/core';
-import Gallery from 'src/app/shared/gallery';
+import { JcdProject } from '../../shared/jcd-entities';
+import { JcdService } from '../../shared/jcd.service';
 
 @Component({
   selector: 'jc-page-tile',
@@ -12,13 +13,21 @@ import Gallery from 'src/app/shared/gallery';
 })
 export class PageTileComponent implements OnInit {
 
-  @Input() gallery: Gallery;
+  @Input() jcdProject: JcdProject;
   hoverClass: string;
+  coverImageUri: string;
 
-  constructor() { }
+  constructor(
+    private jcdService: JcdService,
+  ) { }
 
   ngOnInit() {
-
+    let resizedCoverImageUri: string;
+    resizedCoverImageUri = this.jcdService.getResizedUri({
+      uri: this.jcdService.getImageUri(this.jcdProject.coverImageUri),
+      width: 350,
+    });
+    this.coverImageUri = resizedCoverImageUri;
   }
 
   hover(isHover: boolean){

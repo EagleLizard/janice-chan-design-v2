@@ -3,13 +3,13 @@
   (mouseover)="hover(true)"
   (mouseout)="hover(false)">
   <img 
-    [src]="gallery.image.uri"
+    [src]="coverImageUri"
     [ngClass]="hoverClass">
   <a 
     class="image-overlay"
-    [routerLink]="[gallery.route]">
+    [routerLink]="[jcdProject.route]">
     <div class="overlay-text-container">
-      {{ gallery.title.toLowerCase() }}
+      {{ jcdProject.title.toLowerCase() }}
     </div>
   </a>
 </div>

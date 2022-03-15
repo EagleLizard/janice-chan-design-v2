@@ -28,6 +28,7 @@
     "masonry-layout": "^4.2.2",
     "ngx-lightbox": "^2.3.0",
     "ngx-masonry": "^13.0.0",
+    "query-string": "^7.1.1",
     "rxjs": "~6.6.7",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

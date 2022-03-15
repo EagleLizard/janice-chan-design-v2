@@ -2,49 +2,49 @@
 
   <div 
     class="gallery-detail"
-    *ngIf="gallery && gallery.hasDetail()">
+    *ngIf="jcdProject">
     <div class="gallery-title">
-      {{ gallery.title }}
+      {{ jcdProject.title }}
     </div>
     <div
       class="original-credits"
-      *ngIf="gallery.hasOriginalCredits()">
+      *ngIf="hasOriginalCredits()">
       <div
         class="original-credit"
-        *ngFor="let originalCredit of gallery.originalCredits;">
+        *ngFor="let originalCredit of jcdProjectPage.projectDetails.originalCredits;">
         {{ originalCredit }}
       </div>
     </div>
     <div class="self-credit">
-      {{ gallery.credit }}
+      {{ jcdProjectPage.projectDetails.credit }}
     </div>
     <div class="extra-credit">
       <div 
         class="extra-credit-item"
-        *ngFor="let extraCredit of gallery.description;">
+        *ngFor="let extraCredit of jcdProjectPage.projectDetails.credits;">
         {{ extraCredit }}
       </div>
     </div>
     <div class="detail-footer">
       <div class="footer-year">
-        {{ gallery.year }}
+        {{ displayDate }}
       </div>
     </div>
     <div class="organization">
       <div class="organization-title">
-        {{ gallery.organization }}
+        {{ jcdProjectPage.projectDetails.org }}
       </div>
     </div>
     <div
       class="media-and-press"
-      *ngIf="gallery.hasMedia()">
+      *ngIf="hasMedia()">
       <div class="media-and-press-heading">
         Media & Press
       </div>
       <div class="media-items">
         <div
           class="media-item"
-          *ngFor="let mediaItem of gallery.mediaAndPress;">
+          *ngFor="let mediaItem of jcdProjectPage.projectDetails.mediaAndPress;">
           <div
             class="media-item-description"
             *ngIf="mediaItem.description">

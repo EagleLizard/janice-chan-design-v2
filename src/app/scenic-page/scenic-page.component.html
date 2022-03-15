@@ -4,10 +4,10 @@
       [options]="masonryOptions"
       [ordered]="true">
       <ngxMasonryItem 
-        *ngFor="let gallery of galleries;" 
+        *ngFor="let jcdProject of jcdProjects;" 
         class="masonry-item">
         <div class="gallery-item">
-          <jc-page-tile [gallery]="gallery">
+          <jc-page-tile [jcdProject]="jcdProject">
           </jc-page-tile>
         </div>
       </ngxMasonryItem>
