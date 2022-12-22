@@ -33,7 +33,7 @@ http {
   client_body_timeout 5;
 
   server {
-    listen 39287 reuseport;
+    listen <%= ENV["PORT"] %>;
     charset UTF-8;
     port_in_redirect off;
     keepalive_timeout 5;
@@ -43,14 +43,6 @@ http {
 
 
 
-    mruby_post_read_handler /app/bin/config/lib/ngx_mruby/headers.rb cache;
-
-    location / {
-      mruby_set $fallback /app/bin/config/lib/ngx_mruby/routes_fallback.rb cache;
-
-      try_files $uri $uri/ $fallback;
-
-    }
 
 
 
@@ -60,15 +52,33 @@ http {
     }
 
 
+    location = /index.html {
+      add_header Cache-Control "no-store, no-cache";
+      add_header Strict-Transport-Security "max-age=31536002;";
+      add_header X-Content-Type-Options "nosniff";
+      add_header X-XSS-Protection "1; mode=block";
+      add_header Content-Security-Policy "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';";
+  
+      try_files $uri $uri/ =404;
+    }
+
+    # mruby_post_read_handler /app/bin/config/lib/ngx_mruby/headers.rb cache;
+
+    location / {
+      # mruby_set $fallback /app/bin/config/lib/ngx_mruby/routes_fallback.rb cache;
+
+      try_files $uri $uri/ /index.html;
+
+    }
 
 
 
     location ~ ^/.*$ {
       set $route /.*;
-      mruby_set $path /app/bin/config/lib/ngx_mruby/routes_path.rb cache;
-      mruby_set $fallback /app/bin/config/lib/ngx_mruby/routes_fallback.rb cache;
+      # mruby_set $path /app/bin/config/lib/ngx_mruby/routes_path.rb cache;
+      # mruby_set $fallback /app/bin/config/lib/ngx_mruby/routes_fallback.rb cache;
 
-      try_files $uri $path $fallback;
+      try_files $uri $path/ =404;
 
     }
 
